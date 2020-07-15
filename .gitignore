@@ -1,0 +1,12 @@
+
+# the .DS_Store files everywhere
+.DS_Store
+
+/conf.php
+/conf.*.php
+
+# the favicon directory
+/favicon
+
+# the download directory
+/download
