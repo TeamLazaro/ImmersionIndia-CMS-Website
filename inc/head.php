@@ -135,8 +135,7 @@
 	<?php echo getContent( <<<ARB
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto:400,400i,700" rel="stylesheet">
-	<!-- Icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/grd7uoj.css">
 ARB
 , 'fonts_and_icons' ) ?>
 
