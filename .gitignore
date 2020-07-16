@@ -5,8 +5,10 @@
 /conf.php
 /conf.*.php
 
-# the favicon directory
-/favicon
+# the content directory
+/content
 
 # the download directory
 /download
+
+# Don't ignore /favicon and /media. Since it's just interface and it's small enough to be part of git repo.
