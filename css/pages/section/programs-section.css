@@ -1,0 +1,30 @@
+/*
+ * Programs Section
+ */
+
+.programs-section {}
+
+.programs-section .programs {}
+.programs-section .programs .program {
+	position: relative;
+}
+.programs-section .programs .program .thumbnail {
+	display: block;
+	padding-bottom: 75%; 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.programs-section .programs .program .description {
+	position: relative;
+}
+
+
+.programs-section .programs .program .description > * {
+	display: inline-block;
+}
+
+@media( min-width: 640px )  {}
+@media( min-width: 1040px ) {}
+@media( min-width: 1480px ) {}

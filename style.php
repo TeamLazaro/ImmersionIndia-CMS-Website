@@ -16,4 +16,6 @@
 <link rel="stylesheet" type="text/css" href="css/pages/page.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/modal/modal-menu.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/sample-section.css<?php echo $ver ?>">
+<link rel="stylesheet" type="text/css" href="css/pages/section/programs-section.css<?php echo $ver ?>">
+<link rel="stylesheet" type="text/css" href="css/pages/section/articles-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/team-section.css<?php echo $ver ?>">

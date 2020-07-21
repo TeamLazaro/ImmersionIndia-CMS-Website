@@ -22,7 +22,7 @@
 - [x] Start
 - [x] Done
 
-**Packages Section**
+**Programs Section**
 - [x] Start
 - [ ] Filtration Toggle
 - [ ] Filtration Feedback

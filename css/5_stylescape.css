@@ -454,7 +454,7 @@ select { cursor: pointer; }
 	background-repeat: no-repeat;
 	background-position: 98% 50%;
 	background-size: 7px 7px;
-	background-image: url(../media/icons/icon-required.svg);
+	background-image: url(../media/icon/icon-required.svg);
 }
 
 @media( min-width: 640px )  {
@@ -694,6 +694,7 @@ select { cursor: pointer; }
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
+	padding-right: 15px;
 	white-space: normal;
 	width: calc( 4 * var(--space-100) );
 	scroll-snap-align: center;
@@ -729,13 +730,15 @@ select { cursor: pointer; }
 	line-height: 0;
 	pointer-events: all;
 	background-color: transparent;
+	background-image: radial-gradient(circle, rgba(120,120,120,0.25) 0%, rgba(120,120,120,0) 33.333%);
+	background-position: 50% 50%;
 }
 
 .carousel .carousel-controls .button:hover {
-	background-position: 100% 50%;
+	/*background-position: 100% 50%;*/
 }
 .carousel .carousel-controls .button:active {
-	background-position: 100% 50%;
+	/*background-position: 100% 50%;*/
 }
 
 .carousel .carousel-controls .button img {
@@ -769,7 +772,9 @@ select { cursor: pointer; }
 
 	.carousel .carousel-list .carousel-list-item {
 		width: calc( 5 * var(--space-100) );
+		padding-right: 20px;
 	}
+
 }
 @media( min-width: 1040px ) {
 	.carousel .carousel-controls .button {
@@ -789,6 +794,10 @@ select { cursor: pointer; }
 
 	.carousel .carousel-controls .button img {
 		width: 24px;
+	}
+	
+	.carousel .carousel-list .carousel-list-item {
+		padding-right: 30px;
 	}
 }
 

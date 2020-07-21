@@ -154,8 +154,8 @@
 </section>
 <!-- END: Quote Section -->
 
-<!-- Packages Section -->
-<section class="packages-section space-150-top-bottom fill-neutral-1" data-section-title="Packages Section" data-section-slug="packages-section">
+<!-- Programs Section -->
+<section class="programs-section space-150-top-bottom fill-neutral-1" data-section-title="Programs Section" data-section-slug="programs-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -174,30 +174,48 @@
 			</div>
 		</div>
 	</div>
-	<div class="row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%)">
+	<div class="programs row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%)">
 		<div class="carousel-list js_carousel_content">
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="program carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 strong space-min-bottom">Tech Innovations in India & The Driving Force</div>
+					<div class="excerpt p">Industrial Automation is all about working smarter, faster, and more proficiently. Get a feel of how it’s done and an in-depth understanding of how a Bangalore-based AI solutions company improved ‘asset uptime’ and ‘operational efficiency’ for globally renowned manufacturing industries. The program includes student interactions, company visits and cultural experiences.<br><br>• Connect With AI Start-ups<br>• Visit R&amp;D Labs at the IISC<br>• Master Sessions from Experts</div>
+				</div>
+				<a href="" class="button block fill-pink">Customize Your Program</a>
 			</div>
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="program carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 strong space-min-bottom">The UN's Highest Environmental Honour Awarded to an Indian Airport</div>
+					<div class="excerpt p">The world has no choice but to explore sustainable energy, and what better example to showcase than Cochin International Airport (CIAL) – the world’s first solar power airport. Get insider access to understand how an international airport is powered by solar energy. See long stretches of solar panels spread over 45 acres of unused land and more. An absolutely inspirational experience to encourage ideas that could reduce the carbon footprint of the energy sector. The program also includes company visits and cultural experiences.<br><br>• Airport Solar Farm<br>• Agrivoltaics - Solar Panels &amp; Crops<br>• Sneak-peak into Airport Operations<br>• Masterclass on Climate Governance</div>
+				</div>
+				<a href="" class="button block fill-pink">Customize Your Program</a>
 			</div>
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="program carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
+					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
+				</div>
+				<a href="" class="button block fill-pink">Customize Your Program</a>
 			</div>
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="program carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
+					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
+				</div>
+				<a href="" class="button block fill-pink">Customize Your Program</a>
 			</div>
 		</div>
 		<div class="carousel-controls clearfix">
-			<!-- <div class="container"> -->
-			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-left-triangle-dark.svg?v=20200602"></button></div>
-			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-right-triangle-dark.svg?v=20200602"></button></div>
-			<!-- </div> -->
+			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-prev-dark.svg<?= $ver ?>"></button></div>
+			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-next-dark.svg<?= $ver ?>"></button></div>
 		</div>
 	</div>
 </section>
-<!-- END: Packages Section -->
+<!-- END: Programs Section -->
 
 <!-- Articles Section -->
 <section class="articles-section space-150-top-bottom fill-neutral-2" data-section-title="Articles Section" data-section-slug="articles-section">
@@ -212,26 +230,44 @@
 			</div>
 		</div>
 	</div>
-	<div class="row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%)">
+	<div class="articles row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%)">
 		<div class="carousel-list js_carousel_content">
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="article carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
+					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
+				</div>
+				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="article carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 text-teal strong space-min-bottom">Loremald asdhasj ajdhsad</div>
+					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum minus soluta minima ipsam quaerat, molestiae! Porro minima, delectus commodi provident incidunt, expedita ex cum obcaecati rem fugit vitae perferendis hic.</div>
+				</div>
+				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="article carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
+					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, consequuntur voluptatibus? Culpa velit ipsum veritatis quam facere, rerum aspernatur, iste, nobis eum nemo quod fugit architecto aperiam consequatur inventore quisquam.</div>
+				</div>
+				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
-			<div class="carousel-list-item js_carousel_item">
-				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			<div class="article carousel-list-item js_carousel_item">
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="description space-min-top-bottom">
+					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
+					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ea quisquam asperiores eligendi et corrupti sint, ullam porro quia, aut beatae praesentium animi consectetur voluptatum ex reiciendis id sequi nisi.</div>
+				</div>
+				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
 		</div>
 		<div class="carousel-controls clearfix">
-			<!-- <div class="container"> -->
-			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-left-triangle-dark.svg?v=20200602"></button></div>
-			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-right-triangle-dark.svg?v=20200602"></button></div>
-			<!-- </div> -->
+			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-prev-dark.svg<?= $ver ?>"></button></div>
+			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-next-dark.svg<?= $ver ?>"></button></div>
 		</div>
 	</div>
 </section>
@@ -341,8 +377,8 @@
 
 <!-- Team Section -->
 <section class="team-section space-150-top-bottom fill-dark" data-section-title="Team Section" data-section-slug="team-section">
-	<div class="container">
-		<div class="row">
+	<div class="row">
+		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="h2 text-uppercase space-min-bottom">Meet the Team</div>
 				<div class="row">
@@ -351,7 +387,8 @@
 						<div class="p space-min-bottom">A group of experienced, fun to work with, customer-focused individuals – we’ve got heaps of great ideas that take the shape of great learning experiences. We’re passionate about what we do and determined to deliver the best experiential study programs that showcase India’s brilliant urban and rural potential.</div>
 						<div class="p space-min-bottom">The leadership team has significant experience in the education sector, complemented by long-standing associations with top-ranked educational institutions. We have also worked with foreign universities, and played a decisive role in curating partnerships and experiences with their Indian counterparts.</div>
 						<div class="p space-min-bottom">The long-term working partnerships we’ve forged with many of our clients stand testament to the seamless study programs we’ve curated. Our experiences are completely flexible and we are happy to tackle any aspect of your visit, right from managing the whole trip to simply giving you an experienced set of hands on site.</div>
-						<div class="p">Team up with us and ‘Let India Happen To You’!</div>
+						<div class="description p space-min-top-bottom">Team up with us and ‘Let India Happen To You’!</div>
+						<a href="" class="button block fill-teal">Read the full Article</a>
 					</div>
 					<!-- Team -->
 					<!-- END: Team -->
