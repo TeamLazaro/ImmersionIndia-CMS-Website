@@ -156,8 +156,8 @@
 
 <!-- Packages Section -->
 <section class="packages-section space-150-top-bottom fill-neutral-1" data-section-title="Packages Section" data-section-slug="packages-section">
-	<div class="container">
-		<div class="row">
+	<div class="row">
+		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="h2 text-uppercase space-min-bottom">Immersive Study Programs</div>
 			</div>
@@ -174,13 +174,35 @@
 			</div>
 		</div>
 	</div>
+	<div class="row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%)">
+		<div class="carousel-list js_carousel_content">
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+		</div>
+		<div class="carousel-controls clearfix">
+			<!-- <div class="container"> -->
+			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-left-triangle-dark.svg?v=20200602"></button></div>
+			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-right-triangle-dark.svg?v=20200602"></button></div>
+			<!-- </div> -->
+		</div>
+	</div>
 </section>
 <!-- END: Packages Section -->
 
 <!-- Articles Section -->
 <section class="articles-section space-150-top-bottom fill-neutral-2" data-section-title="Articles Section" data-section-slug="articles-section">
-	<div class="container">
-		<div class="row">
+	<div class="row">
+		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="h2 text-uppercase space-min-bottom">Articles</div>
 				<div class="row">
@@ -190,6 +212,28 @@
 			</div>
 		</div>
 	</div>
+	<div class="row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%)">
+		<div class="carousel-list js_carousel_content">
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+			<div class="carousel-list-item js_carousel_item">
+				<div class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum.</div>
+			</div>
+		</div>
+		<div class="carousel-controls clearfix">
+			<!-- <div class="container"> -->
+			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-left-triangle-dark.svg?v=20200602"></button></div>
+			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-right-triangle-dark.svg?v=20200602"></button></div>
+			<!-- </div> -->
+		</div>
+	</div>
 </section>
 <!-- END: Articles Section -->
 
@@ -197,7 +241,7 @@
 <section class="brochure-section space-150-top-bottom fill-dark" data-section-title="Brochure Section" data-section-slug="brochure-section">
 	<div class="container">
 		<div class="row">
-			<div class="columns small-12 medium-10 medium-offset-1 large-8">
+			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="h2 text-uppercase space-min-bottom">In a hurry</div>
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-25-bottom"><span class="fill-orange"></span></div>
@@ -237,8 +281,55 @@
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-pink"></span></div>
 					<!-- Form -->
-					<div class="form columns small-8 medium-9 large-10">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi enim facilis id molestias a omnis, eum amet, reprehenderit delectus animi libero earum cum saepe facere quidem optio unde, odit quia!
+					<div class="form columns small-12 large-10">
+						<div class="row">
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase required">Full Name</span>
+									<input type="text" class="block">
+								</label>
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase required">Email ID</span>
+									<input type="text" class="block">
+								</label>
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase">Phone Number</span>
+									<input type="text" class="block">
+								</label>
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase">College/University</span>
+									<input type="text" class="block">
+								</label>
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase">Choose a Program</span>
+									<input type="text" class="block">
+								</label>
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase">Suggest a Date</span>
+									<input type="text" class="block">
+								</label>
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<!-- Empty Slot -->
+							</div>
+							<div class="form-row columns small-12 medium-6 space-min-bottom">
+								<label>
+									<span class="label strong text-uppercase invisible">Submit</span>
+									<button class="block fill-pink">Submit</button>
+								</label>
+							</div>
+
+						</div>
 					</div>
 					<!-- END: Form -->
 				</div>
@@ -256,10 +347,13 @@
 				<div class="h2 text-uppercase space-min-bottom">Meet the Team</div>
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-orange"></span></div>
-					<!-- Team -->
-					<div class="team columns small-8 medium-9 large-10">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi enim facilis id molestias a omnis, eum amet, reprehenderit delectus animi libero earum cum saepe facere quidem optio unde, odit quia!
+					<div class="description columns small-12 large-10">
+						<div class="p space-min-bottom">A group of experienced, fun to work with, customer-focused individuals – we’ve got heaps of great ideas that take the shape of great learning experiences. We’re passionate about what we do and determined to deliver the best experiential study programs that showcase India’s brilliant urban and rural potential.</div>
+						<div class="p space-min-bottom">The leadership team has significant experience in the education sector, complemented by long-standing associations with top-ranked educational institutions. We have also worked with foreign universities, and played a decisive role in curating partnerships and experiences with their Indian counterparts.</div>
+						<div class="p space-min-bottom">The long-term working partnerships we’ve forged with many of our clients stand testament to the seamless study programs we’ve curated. Our experiences are completely flexible and we are happy to tackle any aspect of your visit, right from managing the whole trip to simply giving you an experienced set of hands on site.</div>
+						<div class="p">Team up with us and ‘Let India Happen To You’!</div>
 					</div>
+					<!-- Team -->
 					<!-- END: Team -->
 				</div>
 			</div>

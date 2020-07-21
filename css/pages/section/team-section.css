@@ -1,0 +1,14 @@
+/*
+ * Team Section
+ */
+
+.team-section {}
+
+@media( min-width: 640px )  {
+	.team-section .description {
+		column-count: 2;
+		column-gap: calc( var(--space-min) * 2 );
+	}
+}
+@media( min-width: 1040px ) {}
+@media( min-width: 1480px ) {}
