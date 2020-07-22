@@ -9,6 +9,59 @@
 	position: relative;
 }
 
+.programs-section .program-filter .toggle label input + .button {
+	font-weight: 500;
+}
+
+.programs-section .program-filter .toggle label input + .button * { pointer-events: none; }
+
+.programs-section .program-filter .toggle label input:not(:checked) + .button {
+	background-color: transparent;
+}
+.programs-section .program-filter .toggle label input:not(:checked) + .button.fill-teal {
+	color: var(--teal);
+	box-shadow: inset 0px 0px 0px 2px var(--teal);
+}
+.programs-section .program-filter .toggle label input:not(:checked) + .button.fill-pink {
+	color: var(--pink);
+	box-shadow: inset 0px 0px 0px 2px var(--pink);
+}
+
+.programs-section .program-filter .toggle label input + .button .check {
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	transform: translateY(2px);
+	margin-right: 10px;
+}
+.programs-section .program-filter .toggle label input + .button.fill-teal .check {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 2px var(--teal);
+}
+.programs-section .program-filter .toggle label input + .button.fill-pink .check {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 2px var(--pink);
+}
+.programs-section .program-filter .toggle label input:checked + .button.fill-teal .check,
+.programs-section .program-filter .toggle label input:checked + .button.fill-pink .check {
+	background-color: var(--light);
+}
+.programs-section .program-filter .toggle label input:checked + .button.fill-teal .check:before,
+.programs-section .program-filter .toggle label input:checked + .button.fill-pink .check:before {
+	content: '\2713';
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 16px;
+	transform: translate(-45%, -49%);
+}
+
+.programs-section .program-filter .toggle label input:checked + .button.fill-teal .check:before { color: var(--teal); }
+.programs-section .program-filter .toggle label input:checked + .button.fill-pink .check:before { color: var(--pink); }
+
 .programs-section .programs .program .header {}
 .programs-section .programs .program .header .type {}
 .programs-section .programs .program .header .type > * {
@@ -38,9 +91,43 @@
 	display: inline-block;
 }
 
-@media( min-width: 640px )  {}
-@media( min-width: 1040px ) {}
+@media( min-width: 640px )  {
+	.programs-section .program-filter .toggle label input + .button .check {
+		transform: translateY(3px);
+	}
+}
+@media( min-width: 1040px ) {
+	.programs-section .program-filter .toggle label input + .button .check {
+		transform: translateY(2px);
+	}
+}
 @media( min-width: 1480px ) {
+	.programs-section .program-filter .toggle label input:not(:checked) + .button.fill-teal {
+		box-shadow: inset 0px 0px 0px 3px var(--teal);
+	}
+	.programs-section .program-filter .toggle label input:not(:checked) + .button.fill-pink {
+		box-shadow: inset 0px 0px 0px 3px var(--pink);
+	}
+	.programs-section .program-filter .toggle label input + .button .check {
+		width: 20px;
+		height: 20px;
+		border-radius: 3px;
+		margin-right: 15px;
+		transform: translateY(2px);
+	}
+	.programs-section .program-filter .toggle label input + .button.fill-teal .check {
+		box-shadow: 0px 0px 0px 3px var(--teal);
+	}
+	.programs-section .program-filter .toggle label input + .button.fill-pink .check {
+		box-shadow: 0px 0px 0px 3px var(--pink);
+	}
+	.programs-section .program-filter .toggle label input:checked + .button.fill-teal .check:before,
+	.programs-section .program-filter .toggle label input:checked + .button.fill-pink .check:before {
+		font-size: 20px;
+		transform: translate(-45%, -48%);
+	}
+
+
 	.programs-section .programs .program .header .type img {
 		width: 20px;
 		height: 20px;

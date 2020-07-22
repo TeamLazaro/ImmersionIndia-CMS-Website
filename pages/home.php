@@ -164,11 +164,28 @@
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-pink"></span></div>
-					<div class="columns small-12 medium-9 large-6 xlarge-5">
+					<div class="columns small-12 medium-9 large-7 xlarge-6">
 						<div class="h4 text-pink">Travel Based</div>
-						<div class="p text-neutral-4 space-min-bottom">12 to 15 day immersive travel study programs to India. Customized itineraries with turn-key logistics.</div>
+						<div class="p text-neutral-4 space-min-bottom">12 to 15 day immersive travel study programs to India. <br>Customized itineraries with turn-key logistics.</div>
 						<div class="h4 text-teal">Virtual Series</div>
 						<div class="p text-neutral-4">90 minute, live video programs that include a Q&A session.</div>
+
+						<div class="program-filter space-25-top-bottom">
+							<div class="feedback p text-neutral-4 opacity-50 space-min-bottom">
+								<img class="inline-middle" width="16" src="../media/icon/icon-filter-dark.svg<?= $ver ?>">
+								<span class="inline-middle">Select to Filter by Virtual or Travel Programs</span>
+							</div>
+							<div class="row toggle">
+								<label class="columns small-7 medium-6 large-5 space-min-right space-min-bottom inline">
+									<input class="visuallyhidden" type="radio" name="program-toggle" value="virtual">
+									<span class="button block fill-teal"><span class="check"></span>Virtual Series</span>
+								</label>
+								<label class="columns small-7 medium-6 large-5 space-min-right space-min-bottom inline">
+									<input class="visuallyhidden" type="radio" name="program-toggle" value="Travel">
+									<span class="button block fill-pink"><span class="check"></span>Travel Series</span>
+								</label>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -242,7 +259,26 @@
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-25-bottom"><span class="fill-teal"></span></div>
 				</div>
-				<div class="p text-neutral-4">Filter By: Articles — Journals — News</div>
+				<div class="article-filter space-25-bottom">
+					<div class="feedback p text-neutral-4 opacity-50 space-min-bottom">
+						<img class="inline-middle" width="16" src="../media/icon/icon-filter-dark.svg<?= $ver ?>">
+						<span class="inline-middle">Select to Filter by Type of Articles</span>
+					</div>
+					<div class="toggle">
+						<label class="tag inline">
+							<input class="visuallyhidden" type="checkbox" name="article-toggle" value="journals">
+							<span class="p"><span class="check"></span>Journals</span>
+						</label>
+						<label class="tag inline">
+							<input class="visuallyhidden" type="checkbox" name="article-toggle" value="articles">
+							<span class="p"><span class="check"></span>Articles</span>
+						</label>
+						<label class="tag inline">
+							<input class="visuallyhidden" type="checkbox" name="article-toggle" value="news">
+							<span class="p"><span class="check"></span>News</span>
+						</label>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

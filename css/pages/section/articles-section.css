@@ -4,10 +4,58 @@
 
 .articles-section {}
 
+.articles-section .article-filter .toggle .tag {
+	margin-right: var(--space-min);
+}
+
+.articles-section .article-filter .toggle .tag input + span {
+	display: inline-block;
+	border-bottom: solid 2px var(--teal);
+	cursor: pointer;
+	font-weight: 500;
+	line-height: 1.6;
+	padding: 0 6px;
+}
+
+.articles-section .article-filter .toggle .tag input + span * { pointer-events: none; }
+
+.articles-section .article-filter .toggle .tag input + span .check {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 2px;
+	background-color: transparent;
+	box-shadow: inset 0px 0px 0px 2px var(--teal);
+	margin-right: 7px;
+	transform: translateY(2px);
+}
+
+.articles-section .article-filter .toggle .tag input:checked + span {
+	background-color: var(--teal);
+	color: var(--light);
+}
+
+.articles-section .article-filter .toggle .tag input:checked + span .check {
+	background-color: var(--light);
+}
+
+.articles-section .article-filter .toggle .tag input:checked + span .check:before {
+	content: '\2713';
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 12px;
+	font-weight: 500;
+	transform: translate(-45%, -45%);
+	color: var(--teal);
+}
+
 .articles-section .articles {}
 .articles-section .articles .article {
 	position: relative;
 }
+
 .articles-section .articles .article .thumbnail {
 	display: block;
 	padding-bottom: 75%; 
@@ -54,6 +102,22 @@
 	}
 }
 @media( min-width: 1480px ) {
+	.articles-section .article-filter .toggle .tag input + span {
+		padding: 0 8px;
+	}
+
+	.articles-section .article-filter .toggle .tag input + span .check {
+		width: 18px;
+		height: 18px;
+		border-radius: 4px;
+		margin-right: 10px;
+		transform: translateY(3px);
+	}
+	.articles-section .article-filter .toggle .tag input:checked + span .check:before {
+		font-size: 15px;
+		transform: translate(-50%, -45%);
+	}
+
 	.articles-section .articles .article .description {
 		height: 264px;
 	}

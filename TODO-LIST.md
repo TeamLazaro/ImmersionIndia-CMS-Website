@@ -26,16 +26,16 @@
 - [x] Start
 - [x] Listing Carousel
 - [x] Item Single
-- [ ] Filtration Toggle
-- [ ] Filtration Feedback
-- [ ] Done
+- [x] Filtration Toggle
+- [x] Filtration Feedback
+- [x] Done
 
 **Articles Section**
 - [x] Start
 - [x] Listing Carousel
 - [x] Item Single
-- [ ] Filtration Toggle
-- [ ] Done
+- [x] Filtration Toggle
+- [x] Done
 
 **Brochure Section**
 - [x] Start
