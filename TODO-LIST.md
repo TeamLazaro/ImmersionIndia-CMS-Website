@@ -24,22 +24,22 @@
 
 **Programs Section**
 - [x] Start
+- [x] Listing Carousel
+- [x] Item Single
 - [ ] Filtration Toggle
 - [ ] Filtration Feedback
-- [ ] Listing Carousel
-- [ ] Item Single
 - [ ] Done
 
 **Articles Section**
 - [x] Start
+- [x] Listing Carousel
+- [x] Item Single
 - [ ] Filtration Toggle
-- [ ] Listing Carousel
-- [ ] Item Single
 - [ ] Done
 
 **Brochure Section**
 - [x] Start
-- [ ] Actual Text Content
+- [x] Actual Text Content
 - [ ] Brochure Mockup Background
 - [ ] Done
 

@@ -8,6 +8,19 @@
 .programs-section .programs .program {
 	position: relative;
 }
+
+.programs-section .programs .program .header {}
+.programs-section .programs .program .header .type {}
+.programs-section .programs .program .header .type > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.programs-section .programs .program .header .type img {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+
 .programs-section .programs .program .thumbnail {
 	display: block;
 	padding-bottom: 75%; 
@@ -27,4 +40,10 @@
 
 @media( min-width: 640px )  {}
 @media( min-width: 1040px ) {}
-@media( min-width: 1480px ) {}
+@media( min-width: 1480px ) {
+	.programs-section .programs .program .header .type img {
+		width: 20px;
+		height: 20px;
+		margin-right: 8px;
+	}
+}

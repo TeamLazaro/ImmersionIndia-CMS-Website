@@ -177,36 +177,52 @@
 	<div class="programs row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%)">
 		<div class="carousel-list js_carousel_content">
 			<div class="program carousel-list-item js_carousel_item">
+				<div class="header fill-teal space-min">
+					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-virtual-light.svg<?= $ver ?>"><span>Virtual</span></div>
+					<div class="subject h6 text-uppercase">Technology</div>
+				</div>
 				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 strong space-min-bottom">Tech Innovations in India & The Driving Force</div>
 					<div class="excerpt p">Industrial Automation is all about working smarter, faster, and more proficiently. Get a feel of how it’s done and an in-depth understanding of how a Bangalore-based AI solutions company improved ‘asset uptime’ and ‘operational efficiency’ for globally renowned manufacturing industries. The program includes student interactions, company visits and cultural experiences.<br><br>• Connect With AI Start-ups<br>• Visit R&amp;D Labs at the IISC<br>• Master Sessions from Experts</div>
 				</div>
-				<a href="" class="button block fill-pink">Customize Your Program</a>
+				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
 			</div>
 			<div class="program carousel-list-item js_carousel_item">
+				<div class="header fill-pink space-min">
+					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-travel-light.svg<?= $ver ?>"><span>Travel</span></div>
+					<div class="subject h6 text-uppercase">Sustainable Energy</div>
+				</div>
 				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 strong space-min-bottom">The UN's Highest Environmental Honour Awarded to an Indian Airport</div>
 					<div class="excerpt p">The world has no choice but to explore sustainable energy, and what better example to showcase than Cochin International Airport (CIAL) – the world’s first solar power airport. Get insider access to understand how an international airport is powered by solar energy. See long stretches of solar panels spread over 45 acres of unused land and more. An absolutely inspirational experience to encourage ideas that could reduce the carbon footprint of the energy sector. The program also includes company visits and cultural experiences.<br><br>• Airport Solar Farm<br>• Agrivoltaics - Solar Panels &amp; Crops<br>• Sneak-peak into Airport Operations<br>• Masterclass on Climate Governance</div>
 				</div>
-				<a href="" class="button block fill-pink">Customize Your Program</a>
+				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
 			</div>
 			<div class="program carousel-list-item js_carousel_item">
+				<div class="header fill-teal space-min">
+					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-virtual-light.svg<?= $ver ?>"><span>Virtual</span></div>
+					<div class="subject h6 text-uppercase">Economy</div>
+				</div>
 				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
 					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
 				</div>
-				<a href="" class="button block fill-pink">Customize Your Program</a>
+				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
 			</div>
 			<div class="program carousel-list-item js_carousel_item">
+				<div class="header fill-teal space-min">
+					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-virtual-light.svg<?= $ver ?>"><span>Virtual</span></div>
+					<div class="subject h6 text-uppercase">Subject</div>
+				</div>
 				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
 					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
 				</div>
-				<a href="" class="button block fill-pink">Customize Your Program</a>
+				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
 			</div>
 		</div>
 		<div class="carousel-controls clearfix">
@@ -283,11 +299,17 @@
 					<div class="underline columns small-4 medium-3 large-2 space-25-bottom"><span class="fill-orange"></span></div>
 				</div>
 				<div class="row">
-					<div class="columns small-12 medium-6">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam pariatur quis incidunt tenetur maxime eveniet facere nesciunt ullam ex quaerat similique aspernatur sed, vero velit, suscipit laborum deserunt iste iure.
+					<div class="columns small-12 medium-6 large-5 space-50-bottom">
+						<div class="h5 space-min-bottom">Download our <span class="text-teal">Virtual Series Brochure</span></div>
+						<div class="p"><span class="strong text-teal">— &nbsp;</span> 12 Compact Virtual Courses</div>
+						<div class="p space-25-bottom"><span class="strong text-teal">— &nbsp;</span> Course Summaries</div>
+						<a href="" class="button fill-teal">Download Now</a>
 					</div>
-					<div class="columns small-12 medium-6">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sed delectus, eveniet, rerum necessitatibus voluptatibus ducimus ipsa autem maiores magni nihil debitis laboriosam assumenda tempore doloremque earum, error hic eius.
+					<div class="columns small-12 medium-6 large-5">
+						<div class="h5 space-min-bottom">Download a <span class="text-pink">Sample Travel Schedule</span></div>
+						<div class="p"><span class="strong text-pink">— &nbsp;</span> 12 to 15 day Immersive Travel</div>
+						<div class="p space-25-bottom"><span class="strong text-pink">— &nbsp;</span> Customized Itineraries</div>
+						<a href="" class="button fill-pink">Download Now</a>
 					</div>
 				</div>
 			</div>
@@ -384,11 +406,10 @@
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-orange"></span></div>
 					<div class="description columns small-12 large-10">
-						<div class="p space-min-bottom">A group of experienced, fun to work with, customer-focused individuals – we’ve got heaps of great ideas that take the shape of great learning experiences. We’re passionate about what we do and determined to deliver the best experiential study programs that showcase India’s brilliant urban and rural potential.</div>
+						<div class="p space-min-bottom">A group of experienced, fun to work with, <span class="no-wrap">customer-focused</span> individuals – we’ve got heaps of great ideas that take the shape of great learning experiences. We’re passionate about what we do and determined to deliver the best experiential study programs that showcase India’s brilliant urban and rural potential.</div>
 						<div class="p space-min-bottom">The leadership team has significant experience in the education sector, complemented by long-standing associations with top-ranked educational institutions. We have also worked with foreign universities, and played a decisive role in curating partnerships and experiences with their Indian counterparts.</div>
 						<div class="p space-min-bottom">The long-term working partnerships we’ve forged with many of our clients stand testament to the seamless study programs we’ve curated. Our experiences are completely flexible and we are happy to tackle any aspect of your visit, right from managing the whole trip to simply giving you an experienced set of hands on site.</div>
-						<div class="description p space-min-top-bottom">Team up with us and ‘Let India Happen To You’!</div>
-						<a href="" class="button block fill-teal">Read the full Article</a>
+						<div class="p">Team up with us and ‘Let India Happen To You’!</div>
 					</div>
 					<!-- Team -->
 					<!-- END: Team -->

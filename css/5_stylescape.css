@@ -753,11 +753,11 @@ select { cursor: pointer; }
 .carousel .carousel-controls .button * { pointer-events: none; }
 
 .carousel .carousel-controls .prev {
-	transform: translate(0%, -100%);
+	transform: translate(0%, -50%);
 }
 
 .carousel .carousel-controls .next {
-	transform: translate(0%, -100%);
+	transform: translate(0%, -50%);
 }
 
 @media( min-width: 640px )  {
