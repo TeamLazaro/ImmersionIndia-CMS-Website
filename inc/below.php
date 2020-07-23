@@ -27,18 +27,35 @@
 
 
 	<!-- JS Modules -->
-	<script type="text/javascript" src="/js/modules/utils.js"></script>
-	<!-- <script type="text/javascript" src="/js/modules/device-charge.js"></script> -->
-	<script type="text/javascript" src="/js/modules/modal_box.js"></script>
-	<script type="text/javascript" src="/js/modules/video_embed.js"></script>
-	<script type="text/javascript" src="/js/modules/carousel.js"></script>
-	<script type="text/javascript" src="/js/modules/form.js"></script>
-	<script type="text/javascript" src="/js/modules/disclaimer.js"></script>
+	<script type="text/javascript" src="/js/modules/utils.js<?php echo $ver ?>"></script>
+	<!-- <script type="text/javascript" src="/js/modules/device-charge.js<?php echo $ver ?>"></script> -->
+	<script type="text/javascript" src="/js/modules/modal_box.js<?php echo $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/video_embed.js<?php echo $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/carousel.js<?php echo $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/form.js<?php echo $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/disclaimer.js<?php echo $ver ?>"></script>
+	<!-- Slick Carousel -->
+	<script type="text/javascript" src="/plugins/slick/slick.min.js<?php echo $ver ?>"></script>
 
 	<script type="text/javascript">
 
 		$( function () {
-			//
+
+		/*
+		 * Slick Slide Gallery
+		 */
+		
+			$('.slide-gallery').slick({
+				autoplay: true,
+				arrows: true,
+				dots: true,
+				infinite: true,
+				speed: 800,
+				autoplaySpeed: 3000,
+				slidesToShow: 1,
+				adaptiveHeight: true
+			});
+
 		} );
 
 	</script>

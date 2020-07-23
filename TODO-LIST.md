@@ -49,11 +49,11 @@
 
 **Booking Section**
 - [x] Start
+- [x] Email us directly module
 - [ ] Select Dropdown Icon
+- [ ] Done
 - [ ] Calender Widget + Icon
 - [ ] CUPID OTP Verification
-- [ ] Email us directly module
-- [ ] Done
 
 **Team Section**
 - [x] Start

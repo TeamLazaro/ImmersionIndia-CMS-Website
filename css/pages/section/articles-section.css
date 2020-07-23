@@ -2,7 +2,9 @@
  * Articles Section
  */
 
-.articles-section {}
+.articles-section {
+	box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.05), inset 0 0 var(--space-min) 2px rgba(0,0,0,0.05);
+}
 
 .articles-section .article-filter .toggle .tag {
 	margin-right: var(--space-min);
@@ -14,7 +16,7 @@
 	cursor: pointer;
 	font-weight: 500;
 	line-height: 1.6;
-	padding: 0 6px;
+	padding: 0 8px 0 6px;
 }
 
 .articles-section .article-filter .toggle .tag input + span * { pointer-events: none; }
@@ -40,14 +42,14 @@
 }
 
 .articles-section .article-filter .toggle .tag input:checked + span .check:before {
-	content: '\2713';
+	content: '\00D7';
 	display: inline-block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
-	transform: translate(-45%, -45%);
+	transform: translate(-50%, -50%);
 	color: var(--teal);
 }
 
@@ -57,11 +59,25 @@
 }
 
 .articles-section .articles .article .thumbnail {
+	position: relative;
 	display: block;
 	padding-bottom: 75%; 
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.articles-section .articles .article .thumbnail .tag {
+	display: inline-block;
+	padding: 5px 7px;
+	line-height: 1;
+	position: absolute;
+	left: var(--space-min);
+	bottom: var(--space-min);
+	border-radius: 3px;
+	font-weight: 500;
+	color: var(--teal);
+	background-color: rgba(35,31,32,0.75);
 }
 
 .articles-section .articles .article .description {
@@ -103,7 +119,7 @@
 }
 @media( min-width: 1480px ) {
 	.articles-section .article-filter .toggle .tag input + span {
-		padding: 0 8px;
+		padding: 0 12px 0 9px;
 	}
 
 	.articles-section .article-filter .toggle .tag input + span .check {

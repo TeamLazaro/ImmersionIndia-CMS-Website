@@ -62,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row fill-neutral-2 space-50-top-bottom">
+	<div class="new row fill-neutral-2 space-50-top-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-10">
 				<div class="h4 strong text-teal text-uppercase">New</div>
@@ -70,7 +70,7 @@
 				<div class="row">
 					<div class="columns small-12 large-7 space-min-bottom">
 						<!-- video embed -->
-						<div class="video-embed js_video_embed" data-src="lncVHzsc_QA">
+						<div class="video-embed js_video_embed" data-src="Y7oQ8GgWYrE">
 							<div class="video-loading-indicator"></div>
 						</div>
 					</div>
@@ -131,11 +131,41 @@
 
 <!-- Gallery Section -->
 <section class="gallery-section" data-section-title="Gallery Section" data-section-slug="gallery-section">
-	<img class="block" src="https://via.placeholder.com/1920x1080">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-
+	<div class="slide-gallery block">
+		<div class="slide">
+			<div class="image" style="padding-top: 56.25%; background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="columns small-12">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta in vero, consequuntur nesciunt temporibus, quidem cumque ipsam quas voluptatem, deleniti. Animi dolores sunt quisquam repellendus voluptas consequatur quos facilis.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="image" style="padding-top: 56.25%; background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="columns small-12">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta in vero, consequuntur nesciunt temporibus, quidem cumque ipsam quas voluptatem, deleniti. Animi dolores sunt quisquam repellendus voluptas consequatur quos facilis.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="image" style="padding-top: 56.25%; background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="columns small-12">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta in vero, consequuntur nesciunt temporibus, quidem cumque ipsam quas voluptatem, deleniti. Animi dolores sunt quisquam repellendus voluptas consequatur quos facilis.
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -285,7 +315,9 @@
 	<div class="articles row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%)">
 		<div class="carousel-list js_carousel_content">
 			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
+					<div class="tag small text-uppercase">Journals</div>
+				</div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
 					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
@@ -293,7 +325,9 @@
 				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
 			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
+					<div class="tag small text-uppercase">Articles</div>
+				</div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 text-teal strong space-min-bottom">Loremald asdhasj ajdhsad</div>
 					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum minus soluta minima ipsam quaerat, molestiae! Porro minima, delectus commodi provident incidunt, expedita ex cum obcaecati rem fugit vitae perferendis hic.</div>
@@ -301,7 +335,9 @@
 				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
 			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
+					<div class="tag small text-uppercase">News</div>
+				</div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
 					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, consequuntur voluptatibus? Culpa velit ipsum veritatis quam facere, rerum aspernatur, iste, nobis eum nemo quod fugit architecto aperiam consequatur inventore quisquam.</div>
@@ -309,7 +345,9 @@
 				<a href="" class="button block fill-teal">Read The Full Article</a>
 			</div>
 			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
+					<div class="tag small text-uppercase">Journal</div>
+				</div>
 				<div class="description space-min-top-bottom">
 					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
 					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ea quisquam asperiores eligendi et corrupti sint, ullam porro quia, aut beatae praesentium animi consectetur voluptatum ex reiciendis id sequi nisi.</div>
@@ -374,9 +412,9 @@
 				<div class="h2 text-uppercase space-min-bottom">Customize Your Program</div>
 				<div class="row">
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-pink"></span></div>
-					<!-- Form -->
 					<div class="form columns small-12 large-10">
-						<div class="row">
+						<!-- Form -->
+						<div class="row space-50-bottom">
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase required">Full Name</span>
@@ -422,10 +460,20 @@
 									<button class="block fill-pink">Submit</button>
 								</label>
 							</div>
-
+						</div>
+						<!-- END: Form -->
+						<div class="email-action">
+							<a href="mailto:vineeth@immersionindia.com" target="_blank" class="block fill-neutral-2 space-50">
+								<div class="icon inline-bottom space-25-right">
+									<img class="block" src="../media/icon/icon-email-color.svg<?= $ver ?>">
+								</div>
+								<div class="inline-bottom">
+									<div class="h5 text-neutral-4">or, drop us an email at…</div>
+									<div class="email-id h3 strong text-pink w-400" style="letter-spacing: 0.05rem;"><span class="text-underline">vineeth</span><span class="w-500">@</span>immersionindia.com</div>
+								</div>
+							</a>
 						</div>
 					</div>
-					<!-- END: Form -->
 				</div>
 			</div>
 		</div>
