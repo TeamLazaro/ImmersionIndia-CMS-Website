@@ -133,36 +133,36 @@
 <section class="gallery-section" data-section-title="Gallery Section" data-section-slug="gallery-section">
 	<div class="slide-gallery block">
 		<div class="slide">
-			<div class="image" style="padding-top: 56.25%; background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+			<div class="image" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 			<div class="content">
 				<div class="container">
 					<div class="row">
-						<div class="columns small-12">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta in vero, consequuntur nesciunt temporibus, quidem cumque ipsam quas voluptatem, deleniti. Animi dolores sunt quisquam repellendus voluptas consequatur quos facilis.
+						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+							<div class="p w-500 line-height-large text-center">ORACLE has a 120,000 global workforce, 31,000 work in India; making it the second largest, after Oracle's 54,000 employee strength in the US. The facility above is in Bangalore, a destination on your tour.</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="image" style="padding-top: 56.25%; background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+			<div class="image" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 			<div class="content">
 				<div class="container">
 					<div class="row">
-						<div class="columns small-12">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta in vero, consequuntur nesciunt temporibus, quidem cumque ipsam quas voluptatem, deleniti. Animi dolores sunt quisquam repellendus voluptas consequatur quos facilis.
+						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+							<div class="p w-500 line-height-large text-center">India is the world's second-largest English speaking country. India is second only to the USA when it comes to speaking English with around 125 million people speaking the language, which is only 10% of our population.</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="slide">
-			<div class="image" style="padding-top: 56.25%; background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
+			<div class="image" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
 			<div class="content">
 				<div class="container">
 					<div class="row">
-						<div class="columns small-12">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta in vero, consequuntur nesciunt temporibus, quidem cumque ipsam quas voluptatem, deleniti. Animi dolores sunt quisquam repellendus voluptas consequatur quos facilis.
+						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+							<div class="p w-500 line-height-large text-center">The United States is the world’s largest exporter of Corn. You will be visiting a few places in South India, which make it the largest exporter of Rice, pushing 10.25 million tonnes annually.</div>
 						</div>
 					</div>
 				</div>
