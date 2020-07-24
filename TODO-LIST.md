@@ -5,7 +5,10 @@
 - [ ] Done
 
 **Landing Section**
-- [ ] Start
+- [x] Start
+- [ ] Autoplay The Ad Film in Modal
+- [ ] Logo strip
+- [ ] Text Animation
 - [ ] Done
 
 **Intro Section**
@@ -14,38 +17,11 @@
 - [ ] Virtual Learning Video Thumbnail + Modal Video
 - [ ] Done
 
-**Gallery Section**
-- [ ] Start
-- [ ] Done
-
-**Quote Section**
-- [x] Start
-- [x] Done
-
-**Programs Section**
-- [x] Start
-- [x] Listing Carousel
-- [x] Item Single
-- [x] Filtration Toggle
-- [x] Filtration Feedback
-- [x] Done
-
-**Articles Section**
-- [x] Start
-- [x] Listing Carousel
-- [x] Item Single
-- [x] Filtration Toggle
-- [x] Done
-
 **Brochure Section**
 - [x] Start
 - [x] Actual Text Content
 - [ ] Brochure Mockup Background
 - [ ] Done
-
-**Quote Section**
-- [x] Start
-- [x] Done
 
 **Booking Section**
 - [x] Start

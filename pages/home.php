@@ -40,11 +40,21 @@
 
 <!-- Landing Section -->
 <section class="landing-section" data-section-title="Landing Section" data-section-slug="landing-section">
-	<img class="block" src="https://via.placeholder.com/1920x1080">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-				
+	<div class="landing-video-bg">
+		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="uYX4uDXS3Kw" data-loop="true" data-autoplay="true" style="padding-top: 51.85%;">
+			<div class="video-embed-placeholder" style="background-image: url( 'https://via.placeholder.com/1500' );"></div>
+			<!-- <div class="video-loading-indicator"></div> -->
+		</div>
+	</div>
+	<div class="landing-content">
+		<div class="play-video inline text-center cursor-pointer js_modal_trigger" data-mod-id="sample-video" tabindex="-1">
+			<img class="inline-middle" width="64" src="../media/icon/icon-play-video.svg<?= $ver ?>">
+			<div class="h5 w-500 text-light text-uppercase space-min-top">Watch Me First</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="columns small-12">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -463,7 +473,7 @@
 						</div>
 						<!-- END: Form -->
 						<div class="email-action">
-							<a href="mailto:vineeth@immersionindia.com" target="_blank" class="block fill-neutral-2 space-50">
+							<a href="mailto:vineeth@immersionindia.com" target="_blank" class="block fill-neutral-2 space-50" tabindex="-1">
 								<div class="icon inline-bottom space-25-right">
 									<img class="block" src="../media/icon/icon-email-color.svg<?= $ver ?>">
 								</div>

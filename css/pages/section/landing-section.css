@@ -1,0 +1,40 @@
+/*
+ * Team Section
+ */
+
+.landing-section {
+	position: relative;
+}
+
+.landing-section .landing-video-bg {
+	position: relative;
+	z-index: 1;
+}
+
+.landing-section .landing-content {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	background-image: url('../../../media/pattern-mesh.png');
+	background-repeat: repeat;
+}
+
+.landing-section .landing-content .play-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.landing-section .landing-content .play-video:focus {
+	outline: 0;
+}
+
+@media( min-width: 640px )  {}
+@media( min-width: 1040px ) {}
+@media( min-width: 1480px ) {}

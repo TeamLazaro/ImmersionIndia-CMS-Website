@@ -87,7 +87,7 @@
 @media( min-width: 1040px ) {
 	.gallery-section .slide-gallery.slick-slider .slick-dots {
 		transform-origin: center bottom;
-		transform: scale(1.25);
+		transform: scale(1.2);
 	}
 	
 	.gallery-section .slide-gallery.slick-slider .slick-next,
@@ -102,7 +102,7 @@
 }
 @media( min-width: 1480px ) {
 	.gallery-section .slide-gallery.slick-slider .slick-dots {
-		transform: scale(1.5);
+		transform: scale(1.4);
 	}
 	
 	.gallery-section .slide-gallery.slick-slider .slick-next,
