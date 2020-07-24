@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  *
  * @package Brownie Fudge Sundae
- * @since 1.0.0
+ * @since 1.1.0
  */
 
 require_once __DIR__ . '/../../../../conf.php';
@@ -28,3 +28,18 @@ if ( $theURLEndsWithCMS ) {
 	}
 	return header( 'Location: ' . $adminPageURL );
 }
+
+
+
+/*
+ *
+ * ----- The bare minimum service that the `index.php` file in themes perform
+ *
+ */
+// get_header();
+
+// if ( have_posts() )
+// 	while ( have_posts() )
+// 		the_post();
+
+// get_footer();
