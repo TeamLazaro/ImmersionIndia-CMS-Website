@@ -234,6 +234,12 @@ button:focus,
 	/*box-shadow: inset 0px 2px 5px rgba(20,20,10,0.5);*/
 }
 
+.button .material-icons {
+	display: inline-block;
+	line-height: var(--space-75);
+	vertical-align: bottom;
+}
+
 .button.button-icon {
 	padding-right: calc( var(--space-25) + var(--space-75) );
 	position: relative;
@@ -281,6 +287,10 @@ button:focus,
 	.button {
 		height: var(--space-50);
 		font-size: 1.6rem;
+		line-height: var(--space-50);
+	}
+
+	.button .material-icons {
 		line-height: var(--space-50);
 	}
 

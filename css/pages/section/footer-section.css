@@ -1,0 +1,16 @@
+/*
+ * Footer Section
+ */
+
+.footer-section {}
+
+@media( min-width: 640px )  {
+	.footer-section .content > .row > .columns:nth-child(2n) {
+		padding-left: var(--space-min);
+	}
+	.footer-section .content > .row > .columns:nth-child(2n+1) {
+		padding-right: var(--space-min);
+	}
+}
+@media( min-width: 1040px ) {}
+@media( min-width: 1480px ) {}

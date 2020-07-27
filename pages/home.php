@@ -48,7 +48,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
-				<button class="menu button fill-neutral-1 inline w-500">Menu</button>
+				<button class="menu button fill-neutral-1 inline w-500"><i class="material-icons">menu</i> Menu</button>
 			</div>
 		</div>
 	</div>
@@ -405,13 +405,13 @@
 						<div class="h5 space-min-bottom">Download our <span class="text-teal">Virtual Series Brochure</span></div>
 						<div class="p"><span class="strong text-teal">— &nbsp;</span> 12 Compact Virtual Courses</div>
 						<div class="p space-25-bottom"><span class="strong text-teal">— &nbsp;</span> Course Summaries</div>
-						<a href="" class="button fill-teal">Download Now</a>
+						<a href="" class="button fill-teal">Download Now <i class="material-icons">get_app</i></a>
 					</div>
 					<div class="columns small-12 medium-6 large-5">
 						<div class="h5 space-min-bottom">Download a <span class="text-pink">Sample Travel Schedule</span></div>
 						<div class="p"><span class="strong text-pink">— &nbsp;</span> 12 to 15 day Immersive Travel</div>
 						<div class="p space-25-bottom"><span class="strong text-pink">— &nbsp;</span> Customized Itineraries</div>
-						<a href="" class="button fill-pink">Download Now</a>
+						<a href="" class="button fill-pink">Download Now <i class="material-icons">get_app</i></a>
 					</div>
 				</div>
 			</div>
@@ -533,11 +533,35 @@
 <!-- END: Team Section -->
 
 <!-- Footer Section -->
-<section class="footer-section" data-section-title="Footer Section" data-section-slug="footer-section">
+<section class="footer-section space-100-top-bottom fill-black" data-section-title="Footer Section" data-section-slug="footer-section">
 	<div class="container">
 		<div class="row">
-			<div class="columns small-12">
-				
+			<div class="columns small-12 medium-10 medium-offset-1">
+				<div class="h2 text-uppercase space-min-bottom">Quick Links</div>
+				<div class="row">
+					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-orange"></span></div>
+					<div class="content columns small-12 large-10">
+						<div class="row">
+							<div class="columns small-12 medium-6">
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Home</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Why Us</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Study Programs</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Faqs</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Team</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Enquire Now</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">COVID-19</a></div>
+							</div>
+							<div class="columns small-12 medium-6">
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">+91 95916 58632<br><span class="small">Also on WhatsApp & FaceTime.</span></a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">vineeth@immersionindia.com</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Connect on LinkedIn</a></div>
+								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Immersion India</a></div>
+								<div class="h5 space-50-top-bottom"><a href="" class="link line-height-small"><img src="../media/logo-immersion-light.svg<?= $ver ?>"></a></div>
+								<div class="h5 space-min-bottom"><span class="opacity-50">303, Milwaukee, 40 Promenade Road, Frazer Town. Bangalore—560005. Karnataka. India.</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
