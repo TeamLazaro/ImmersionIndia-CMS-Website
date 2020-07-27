@@ -16,6 +16,9 @@
 <link rel="stylesheet" type="text/css" href="css/pages/page.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/modal/modal-menu.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/sample-section.css<?php echo $ver ?>">
+<!-- <link rel="stylesheet" type="text/css" href="css/pages/section/navigation-section.css<?php echo $ver ?>"> -->
+<link rel="stylesheet" type="text/css" href="css/pages/section/header-section.css<?php echo $ver ?>">
+<link rel="stylesheet" type="text/css" href="css/pages/section/menu-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/landing-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/intro-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/gallery-section.css<?php echo $ver ?>">

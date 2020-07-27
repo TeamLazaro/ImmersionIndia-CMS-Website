@@ -1,0 +1,28 @@
+/*
+ * Header Section
+ */
+
+.header-section {
+	text-align: center;
+}
+
+.header-section .logo {
+	display: inline-block;
+	width: 180px;
+}
+
+@media( min-width: 640px )  {
+	.header-section {
+		text-align: left;
+	}
+}
+@media( min-width: 1040px ) {
+	.header-section .logo {
+		width: 200px;
+	}
+}
+@media( min-width: 1480px ) {
+	.header-section .logo {
+		width: 260px;
+	}
+}

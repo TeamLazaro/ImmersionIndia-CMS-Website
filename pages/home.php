@@ -26,17 +26,34 @@
 </section>
 <!-- END: Sample Page Content -->
 
-<!-- Navigation Section -->
-<section class="navigation-section">
+<!-- Header Section -->
+<section class="header-section space-25-top-bottom fill-neutral-1">
 	<div class="container">
 		<div class="row">
-			<div class="columns small-12">
-				
+			<div class="columns small-12 medium-10 medium-offset-1">
+				<a href="/" class="logo">
+					<img src="../media/logo-immersion-dark.svg<?= $ver ?>">
+				</a>
+			</div>
+			<!-- <div class="columns small-4 medium-5 inline-middle text-right">
+				<button class="menu button fill-neutral-1 inline w-500" style="box-shadow: 0 0 0 2px rgba(35, 31, 32, 1)">Menu</button>
+			</div> -->
+		</div>
+	</div>
+</section>
+<!-- END: Header Section -->
+
+<!-- Menu Section -->
+<section class="menu-section space-25-top-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 medium-10 medium-offset-1">
+				<button class="menu button fill-neutral-1 inline w-500">Menu</button>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- END: Navigation Section -->
+<!-- END: Menu Section -->
 
 <!-- Landing Section -->
 <section class="landing-section" data-section-title="Landing Section" data-section-slug="landing-section">
@@ -136,6 +153,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="watercolor train"><img class="block" src="../media/watercolor/watercolor-train.png<?= $ver ?>"></div>
 </section>
 <!-- END: Intro Section -->
 
