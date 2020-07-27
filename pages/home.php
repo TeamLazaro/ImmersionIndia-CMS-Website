@@ -79,7 +79,7 @@
 <!-- END: Landing Section -->
 
 <!-- Intro Section -->
-<section class="intro-section fill-neutral-1 space-150-top-bottom" data-section-title="Intro Section" data-section-slug="intro-section">
+<section class="intro-section fill-neutral-1 space-100-top-bottom" data-section-title="Intro Section" data-section-slug="intro-section">
 	<div class="row space-50-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8">
@@ -213,7 +213,7 @@
 <!-- END: Quote Section -->
 
 <!-- Programs Section -->
-<section class="programs-section space-150-top-bottom fill-neutral-1" data-section-title="Programs Section" data-section-slug="programs-section">
+<section class="programs-section space-100-top-bottom fill-neutral-1" data-section-title="Programs Section" data-section-slug="programs-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -309,7 +309,7 @@
 <!-- END: Programs Section -->
 
 <!-- Articles Section -->
-<section class="articles-section space-150-top-bottom fill-neutral-2" data-section-title="Articles Section" data-section-slug="articles-section">
+<section class="articles-section space-100-top-bottom fill-neutral-2" data-section-title="Articles Section" data-section-slug="articles-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -392,7 +392,7 @@
 <!-- END: Articles Section -->
 
 <!-- Brochure Section -->
-<section class="brochure-section space-150-top-bottom fill-dark" data-section-title="Brochure Section" data-section-slug="brochure-section">
+<section class="brochure-section space-100-top-bottom fill-dark" data-section-title="Brochure Section" data-section-slug="brochure-section">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -433,7 +433,7 @@
 <!-- END: Quote Section -->
 
 <!-- Booking Section -->
-<section class="booking-section space-150-top-bottom fill-neutral-1" data-section-title="Booking Section" data-section-slug="booking-section">
+<section class="booking-section space-100-top-bottom fill-neutral-1" data-section-title="Booking Section" data-section-slug="booking-section">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -510,7 +510,7 @@
 <!-- END: Booking Section -->
 
 <!-- Team Section -->
-<section class="team-section space-150-top-bottom fill-dark" data-section-title="Team Section" data-section-slug="team-section">
+<section class="team-section space-100-top-bottom fill-dark" data-section-title="Team Section" data-section-slug="team-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
