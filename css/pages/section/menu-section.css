@@ -24,7 +24,9 @@
 .menu-section .menu {
 	display: inline-block;
 	pointer-events: all;
-	background-color: rgba(242, 243, 235, 0.85);
+	/*background-color: rgba(242, 243, 235, 0.85);*/
+	background-color: rgba(24, 186, 137, 0.95);
+	/*box-shadow: 0 0 0 2px rgba(35, 31, 32, 1);*/
 	box-shadow: 0 0 0 2px rgba(35, 31, 32, 1);
 }
 

@@ -1,0 +1,56 @@
+/*
+ * Brochure Section
+ */
+
+.brochure-section {
+	position: relative;
+	padding-bottom: 250px;
+	overflow: hidden; 
+}
+
+.brochure-section .row {
+	position: relative;
+	z-index: 2;
+}
+.brochure-section .art { z-index: 1; }
+
+.brochure-section .art.brochure {
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 500px;
+	height: auto;
+	transform: translate(-49%, 20%);
+}
+
+@media( min-width: 640px )  {
+	.brochure-section {
+		padding-bottom: 150px;
+	}
+
+	.brochure-section .art.brochure {
+		width: 500px;
+		transform: translate(10%, 25%);
+	}
+}
+@media( min-width: 1040px ) {
+	.brochure-section {
+		padding-bottom: 200px;
+	}
+
+	.brochure-section .art.brochure {
+		width: 750px;
+		transform: translate(-5%, 30%);
+	}
+}
+@media( min-width: 1480px ) {
+	.brochure-section {
+		padding-bottom: 250px;
+	}
+
+	.brochure-section .art.brochure {
+		width: 1000px;
+		transform: translate(-10%, 30%);
+	}
+}

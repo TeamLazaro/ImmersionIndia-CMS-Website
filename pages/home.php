@@ -48,7 +48,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
-				<button class="menu button fill-neutral-1 inline w-500"><i class="material-icons">menu</i> Menu</button>
+				<button class="menu button fill-teal inline w-500"><i class="material-icons">menu</i> Menu</button>
 			</div>
 		</div>
 	</div>
@@ -153,7 +153,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="watercolor train"><img class="block" src="../media/watercolor/watercolor-train.png<?= $ver ?>"></div>
+	<div class="art train"><img class="block" src="../media/section-background/watercolor-train.png<?= $ver ?>"></div>
 </section>
 <!-- END: Intro Section -->
 
@@ -393,8 +393,8 @@
 
 <!-- Brochure Section -->
 <section class="brochure-section space-100-top-bottom fill-dark" data-section-title="Brochure Section" data-section-slug="brochure-section">
-	<div class="container">
-		<div class="row">
+	<div class="row">
+		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="h2 text-uppercase space-min-bottom">In a hurry</div>
 				<div class="row">
@@ -417,6 +417,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="art brochure"><img class="block" src="../media/section-background/brochure-mockup.png<?= $ver ?>"></div>
 </section>
 <!-- END: Brochure Section -->
 
