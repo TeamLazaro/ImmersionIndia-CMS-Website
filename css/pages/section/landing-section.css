@@ -40,7 +40,7 @@
 
 /* -- For Image -- */
 
-.landing-section .landing-image-bg {
+.landing-section .landing-image-bg .image {
 	position: absolute;
 	z-index: 1;
 	top: 0;
