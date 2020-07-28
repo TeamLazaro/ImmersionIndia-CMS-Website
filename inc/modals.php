@@ -15,6 +15,20 @@
 				</div>
 			</div>
 		</div><!-- END : Sample Video -->
+		
+		<!-- Modal Content : Sample Video -->
+		<div class="modal-box-content js_modal_box_content" data-mod-id="immersion-main-film">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+						<!-- video embed -->
+						<div class="video-embed js_video_embed" data-src="AwgsK30aFl8">
+							<div class="video-loading-indicator"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- END : Sample Video -->
 
 		<!-- Modal Content : Sample Form -->
 		<div class="modal-box-content js_modal_box_content" data-mod-id="sample-form">

@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="landing-content">
-		<div class="play-video inline text-center cursor-pointer js_modal_trigger" data-mod-id="sample-video" tabindex="-1">
+		<div class="play-video inline text-center cursor-pointer js_modal_trigger" data-mod-id="immersion-main-film" tabindex="-1">
 			<img class="inline-middle" width="64" src="../media/icon/icon-play-video.svg<?= $ver ?>">
 			<div class="h5 w-500 text-light text-uppercase space-min-top">Watch Me First</div>
 		</div>
