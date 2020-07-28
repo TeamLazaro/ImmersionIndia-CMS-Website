@@ -2,9 +2,44 @@
  * Programs Section
  */
 
-.programs-section {}
+.programs-section {
+	position: relative;
+	overflow: hidden;
+}
+
+.programs-section .row {
+	position: relative;
+	z-index: 2;
+}
+.programs-section .art { z-index: 1; }
+.programs-section .art.splash-3 {
+		display: none;
+}
+
+@media( min-width: 640px )  {}
+@media( min-width: 1040px ) {
+	.programs-section .art.splash-3 {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		width: 500px;
+		height: auto;
+		transform: translate(35%, -10%);
+	}
+}
+@media( min-width: 1480px ) {
+	.programs-section .art.splash-3 {
+		width: 640px;
+		transform: translate(35%, -10%);
+	}
+}
+
+/* -- Programs -- */
 
 .programs-section .programs {}
+
+
 .programs-section .programs .program {
 	position: relative;
 }

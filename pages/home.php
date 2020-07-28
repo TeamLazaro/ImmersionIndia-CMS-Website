@@ -15,48 +15,8 @@
 
 
 
-<!-- Sample Page Content -->
-<section class="intro-section">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12">
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Sample Page Content -->
-
-<!-- Header Section -->
-<section class="header-section space-25-top-bottom fill-neutral-1">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 medium-10 medium-offset-1">
-				<a href="/" class="logo">
-					<img src="../media/logo-immersion-dark.svg<?= $ver ?>">
-				</a>
-			</div>
-			<!-- <div class="columns small-4 medium-5 inline-middle text-right">
-				<button class="menu button fill-neutral-1 inline w-500" style="box-shadow: 0 0 0 2px rgba(35, 31, 32, 1)">Menu</button>
-			</div> -->
-		</div>
-	</div>
-</section>
-<!-- END: Header Section -->
-
-<!-- Menu Section -->
-<section class="menu-section space-25-top-bottom">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 medium-10 medium-offset-1">
-				<button class="menu button fill-teal inline w-500"><i class="material-icons">menu</i> Menu</button>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Menu Section -->
-
 <!-- Landing Section -->
-<section class="landing-section" data-section-title="Landing Section" data-section-slug="landing-section">
+<section class="landing-section fill-dark" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-video-bg">
 		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="uYX4uDXS3Kw" data-loop="true" data-autoplay="true" style="padding-top: 51.85%;">
 			<div class="video-embed-placeholder" style="background-image: url( 'https://via.placeholder.com/1500' );"></div>
@@ -249,7 +209,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="programs row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%)">
+	<div class="programs row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%);">
 		<div class="carousel-list js_carousel_content">
 			<div class="program carousel-list-item js_carousel_item">
 				<div class="header fill-teal space-min">
@@ -305,6 +265,7 @@
 			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-next-dark.svg<?= $ver ?>"></button></div>
 		</div>
 	</div>
+	<div class="art splash-3"><img class="block" src="../media/section-background/watercolor-splash-3.png<?= $ver ?>"></div>
 </section>
 <!-- END: Programs Section -->
 
@@ -340,7 +301,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="articles row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%)">
+	<div class="articles row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%);">
 		<div class="carousel-list js_carousel_content">
 			<div class="article carousel-list-item js_carousel_item">
 				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
@@ -532,42 +493,6 @@
 	</div>
 </section>
 <!-- END: Team Section -->
-
-<!-- Footer Section -->
-<section class="footer-section space-100-top-bottom fill-black" data-section-title="Footer Section" data-section-slug="footer-section">
-	<div class="container">
-		<div class="row">
-			<div class="columns small-12 medium-10 medium-offset-1">
-				<div class="h2 text-uppercase space-min-bottom">Quick Links</div>
-				<div class="row">
-					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-orange"></span></div>
-					<div class="content columns small-12 large-10">
-						<div class="row">
-							<div class="columns small-12 medium-6">
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Home</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Why Us</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Study Programs</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Faqs</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Team</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Enquire Now</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">COVID-19</a></div>
-							</div>
-							<div class="columns small-12 medium-6">
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">+91 95916 58632<br><span class="small">Also on WhatsApp & FaceTime.</span></a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">vineeth@immersionindia.com</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Connect on LinkedIn</a></div>
-								<div class="h5 space-min-bottom"><a href="" class="link line-height-small">Immersion India</a></div>
-								<div class="h5 space-50-top-bottom"><a href="" class="link line-height-small"><img src="../media/logo-immersion-light.svg<?= $ver ?>"></a></div>
-								<div class="h5 space-min-bottom"><span class="opacity-50">303, Milwaukee, 40 Promenade Road, Frazer Town. Bangalore—560005. Karnataka. India.</span></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Footer Section -->
 
 
 

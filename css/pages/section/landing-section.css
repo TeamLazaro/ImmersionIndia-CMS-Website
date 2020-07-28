@@ -6,12 +6,14 @@
 	position: relative;
 }
 
+/* -- For Video -- */
+
 .landing-section .landing-video-bg {
 	position: relative;
 	z-index: 1;
 }
 
-.landing-section .landing-content {
+.landing-section .landing-video-bg + .landing-content {
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -24,17 +26,54 @@
 	background-repeat: repeat;
 }
 
-.landing-section .landing-content .play-video {
+.landing-section .landing-video-bg + .landing-content .play-video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.landing-section .landing-content .play-video:focus {
+.landing-section .landing-video-bg + .landing-content .play-video:focus {
 	outline: 0;
 }
 
-@media( min-width: 640px )  {}
-@media( min-width: 1040px ) {}
-@media( min-width: 1480px ) {}
+
+/* -- For Image -- */
+
+.landing-section .landing-image-bg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.landing-section .landing-image-bg + .landing-content {
+	position: relative;
+	z-index: 2;
+	background-image: url('../../../media/pattern-mesh.png');
+	background-repeat: repeat;
+	padding-top: 120px;
+}
+
+@media( min-width: 640px )  {
+	.landing-section .landing-image-bg + .landing-content {
+		padding-top: 140px;
+	}
+}
+@media( min-width: 1040px ) {
+	.landing-section .landing-image-bg + .landing-content {
+		padding-top: 180px;
+	}
+}
+@media( min-width: 1480px ) {
+	.landing-section .landing-image-bg + .landing-content {
+		padding-top: 240px;
+	}
+}

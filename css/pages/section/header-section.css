@@ -3,26 +3,66 @@
  */
 
 .header-section {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
 	text-align: center;
+	overflow-x: hidden;
+	background-image: linear-gradient( to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.125) 100%)
 }
 
 .header-section .logo {
+	position: relative;
 	display: inline-block;
 	width: 180px;
+}
+
+.header-section .logo:before,
+.header-section .logo:after {
+	content: '';
+	display: inline-block;
+	width: 100vw;
+	height: 36px;
+	background-color: var(--light);
+	position: absolute;
+	bottom: 5px;
+}
+
+.header-section .logo:before {
+	left: 100%;
+}
+.header-section .logo:after {
+	right: 100%;	
 }
 
 @media( min-width: 640px )  {
 	.header-section {
 		text-align: left;
 	}
+
+	.header-section .logo {
+		width: 247px;
+	}
+
+	.header-section .logo:before,
+	.header-section .logo:after {
+		height: 50px;
+		bottom: 5px;
+	}
 }
 @media( min-width: 1040px ) {
-	.header-section .logo {
-		width: 200px;
-	}
 }
 @media( min-width: 1480px ) {
 	.header-section .logo {
-		width: 260px;
+		width: 295px;
+	}
+
+	.header-section .logo:before,
+	.header-section .logo:after {
+		height: 60px;
+		bottom: 5px;
 	}
 }
