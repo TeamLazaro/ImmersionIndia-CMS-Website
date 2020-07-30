@@ -5,11 +5,38 @@
  *
  */
 
-// Page-specific preparatory code goes here.
+require_once __DIR__ . '/../inc/above.php';
+
+
+$factSlides = [ ];
+$slidePosts = getPostsOf( 'slides' );
+foreach ( $slidePosts as $slide ) {
+	$caption = getContent( '', 'caption', $slide[ 'ID' ] );
+	$imageData = getContent( '', 'image', $slide[ 'ID' ] );
+	if (
+		empty( $caption )
+		or empty( $imageData )
+		or empty( $imageData[ 'sizes' ] )
+	)
+		continue;
+
+	$imageVersions = array_values( $imageData[ 'sizes' ] );
+	$urls = [ ];
+	for ( $_i = 0; $_i < count( $imageVersions ) / 3; $_i += 1 )
+		$urls[ ] = $imageVersions[ $_i * 3 ] . ' ' . $imageVersions[ $_i * 3 + 1 ] . 'w';
+
+	$factSlides[ ] = [
+		'caption' => $caption,
+		'image' => [
+			'fallbackURL' => $imageData[ 'url' ],
+			'srcsetURL' => implode( ', ', $urls )
+		]
+	];
+}
+
 
 ?>
 
-<?php require_once __DIR__ . '/../inc/above.php'; ?>
 
 
 
@@ -120,42 +147,22 @@
 <!-- Gallery Section -->
 <section class="gallery-section" data-section-title="Gallery Section" data-section-slug="gallery-section">
 	<div class="slide-gallery block">
-		<div class="slide">
-			<div class="image" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-			<div class="content">
-				<div class="container">
-					<div class="row">
-						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
-							<div class="p w-500 line-height-large text-center">ORACLE has a 120,000 global workforce, 31,000 work in India; making it the second largest, after Oracle's 54,000 employee strength in the US. The facility above is in Bangalore, a destination on your tour.</div>
+		<?php foreach ( $factSlides as $slide ) : ?>
+			<div class="slide">
+				<div class="image">
+					<img src="<?= $slide[ 'image' ][ 'fallbackURL' ] ?>" srcset="<?= $slide[ 'image' ][ 'srcsetURL' ] ?>" sizes="100vw" loading="lazy">
+				</div>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+								<div class="p w-500 line-height-large text-center"><?= $slide[ 'caption' ] ?></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="slide">
-			<div class="image" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-			<div class="content">
-				<div class="container">
-					<div class="row">
-						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
-							<div class="p w-500 line-height-large text-center">India is the world's second-largest English speaking country. India is second only to the USA when it comes to speaking English with around 125 million people speaking the language, which is only 10% of our population.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slide">
-			<div class="image" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-			<div class="content">
-				<div class="container">
-					<div class="row">
-						<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
-							<div class="p w-500 line-height-large text-center">The United States is the world’s largest exporter of Corn. You will be visiting a few places in South India, which make it the largest exporter of Rice, pushing 10.25 million tonnes annually.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php endforeach; ?>
 	</div>
 </section>
 <!-- END: Gallery Section -->
