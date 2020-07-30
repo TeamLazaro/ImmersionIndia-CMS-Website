@@ -27,4 +27,5 @@
 <link rel="stylesheet" type="text/css" href="css/pages/section/brochure-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/booking-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/team-section.css<?php echo $ver ?>">
+<link rel="stylesheet" type="text/css" href="css/pages/section/post-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/footer-section.css<?php echo $ver ?>">

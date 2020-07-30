@@ -93,6 +93,20 @@
 				adaptiveHeight: true
 			});
 
+
+			$('.blocks-gallery-grid').slick({
+				autoplay: true,
+				arrows: true,
+				dots: false,
+				infinite: true,
+				speed: 800,
+				autoplaySpeed: 3000,
+				slidesToShow: 1,
+				centerMode: true,
+				variableWidth: true
+			});
+
+
 		} );
 
 	</script>
