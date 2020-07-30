@@ -45,13 +45,13 @@ function bfs_theme_setup () {
 	 */
 	if ( function_exists( 'acf_add_options_page' ) ) {
 		acf_add_options_page( [
-			'page_title' => 'Metadata',
-			'menu_title' => 'Metadata',
+			'page_title' => 'Options',
+			'menu_title' => 'Options',
 			'menu_slug' => 'metadata',
 			'capability' => 'edit_posts',
 			'parent_slug' => '',
-			'position' => false,
-			'icon_url' => 'dashicons-info'
+			'position' => '5',
+			'icon_url' => 'dashicons-admin-generic'
 		] );
 	}
 
