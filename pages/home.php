@@ -8,7 +8,7 @@
 require_once __DIR__ . '/../inc/above.php';
 
 
-$factSlides = [ ];
+$slideGallery = [ ];
 $slidePosts = getPostsOf( 'slides' );
 foreach ( $slidePosts as $slide ) {
 	$caption = getContent( '', 'caption', $slide[ 'ID' ] );
@@ -25,7 +25,7 @@ foreach ( $slidePosts as $slide ) {
 	for ( $_i = 0; $_i < count( $imageVersions ) / 3; $_i += 1 )
 		$urls[ ] = $imageVersions[ $_i * 3 ] . ' ' . $imageVersions[ $_i * 3 + 1 ] . 'w';
 
-	$factSlides[ ] = [
+	$slideGallery[ ] = [
 		'caption' => $caption,
 		'image' => [
 			'fallbackURL' => $imageData[ 'url' ],
@@ -147,7 +147,7 @@ foreach ( $slidePosts as $slide ) {
 <!-- Gallery Section -->
 <section class="gallery-section" data-section-title="Gallery Section" data-section-slug="gallery-section">
 	<div class="slide-gallery block">
-		<?php foreach ( $factSlides as $slide ) : ?>
+		<?php foreach ( $slideGallery as $slide ) : ?>
 			<div class="slide">
 				<div class="image">
 					<img src="<?= $slide[ 'image' ][ 'fallbackURL' ] ?>" srcset="<?= $slide[ 'image' ][ 'srcsetURL' ] ?>" sizes="100vw" loading="lazy">

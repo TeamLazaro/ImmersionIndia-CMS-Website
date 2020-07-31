@@ -84,6 +84,7 @@
 .post-section .wp-block-gallery figure {
 	position: relative;
 	margin: 0;
+	padding: 2px 1px;
 	font-size: 0;
 }
 .post-section .wp-block-gallery figcaption {
@@ -145,7 +146,8 @@
 	height: var(--space-100);
 	z-index: 4;
 	/*background-color: rgba(35, 31, 32, 0.1);*/
-	background-color: rgba(255, 255, 255, 0.75);
+	/*background-color: rgba(255, 255, 255, 0.75);*/
+	background-color: var(--orange);
 	background-size: 20px;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -72,7 +72,7 @@ http_response_code( 200 );
 
 	<?php require_once 'head.php'; ?>
 
-	<body id="body" class="body">
+	<body id="body" class="body open-navigation">
 
 		<?php
 			/*
@@ -83,39 +83,10 @@ http_response_code( 200 );
 
 	<!--  ★  MARKUP GOES HERE  ★  -->
 
+	<?php require_once 'navigation.php'; ?>
+
 	<div id="page-wrapper"><!-- Page Wrapper -->
-
-		<?php require_once 'navigation.php'; ?>
-
 
 		<!-- Page Content -->
 		<div id="page-content">
 
-			<!-- Header Section -->
-			<section class="header-section space-25-top-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="columns small-12 medium-10 medium-offset-1">
-							<a href="/" class="logo">
-								<img src="../media/logo-immersion-light.svg<?= $ver ?>">
-							</a>
-						</div>
-						<!-- <div class="columns small-4 medium-5 inline-middle text-right">
-							<button class="menu button fill-neutral-1 inline w-500" style="box-shadow: 0 0 0 2px rgba(35, 31, 32, 1);">Menu</button>
-						</div> -->
-					</div>
-				</div>
-			</section>
-			<!-- END: Header Section -->
-
-			<!-- Menu Section -->
-			<section class="menu-section space-25-top-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="columns small-12 medium-10 medium-offset-1">
-							<button class="menu button inline w-500"><i class="material-icons">menu</i> Menu</button>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- END: Menu Section -->

@@ -33,7 +33,8 @@
 	height: var(--space-100);
 	z-index: 4;
 	/*background-color: rgba(35, 31, 32, 0.1);*/
-	background-color: rgba(255, 255, 255, 0.25);
+	/*background-color: rgba(255, 255, 255, 0.25);*/
+	background-color: var(--pink);
 	background-size: 20px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -48,14 +49,14 @@
 	right: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	background-image: url('../../../media/icon/icon-next-pink.svg');
+	background-image: url('../../../media/icon/icon-next-light.svg');
 }
 
 .gallery-section .slide-gallery.slick-slider .slick-prev {
 	left: 0;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	background-image: url('../../../media/icon/icon-prev-pink.svg');
+	background-image: url('../../../media/icon/icon-prev-light.svg');
 }
 
 /* -- END: Slicks Resets -- */
