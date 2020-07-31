@@ -68,6 +68,31 @@ foreach ( $programPosts as $program ) {
 }
 
 
+/*
+ * ----- Posts
+ */
+$posts = [ ];
+$postObjects = getPostsOf( 'post' );
+foreach ( $postObjects as $postObject ) {
+	$featuredImage = get_the_post_thumbnail_url( $postObject[ 'ID' ] );
+	$categories = get_the_category( $postObject[ 'ID' ] );
+	if ( empty( $categories ) )
+		$category = '';
+	else
+		$category = $categories[ 0 ]->name;
+	$excerpt = $postObject[ 'post_excerpt' ] ?: substr( wp_strip_all_tags( $postObject[ 'post_content' ] ), 0, 415 );
+
+	$posts[ ] = [
+		'title' => $postObject[ 'post_title' ],
+		'slug' => $postObject[ 'post_name' ],
+		'category' => $category,
+		'featuredImage' => [
+			'fallbackURL' => $featuredImage
+		],
+		'excerpt' => $excerpt
+	];
+}
+
 ?>
 
 
@@ -309,46 +334,18 @@ foreach ( $programPosts as $program ) {
 	</div>
 	<div class="articles row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%);">
 		<div class="carousel-list js_carousel_content">
-			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
-					<div class="tag small text-uppercase">Journals</div>
+			<?php foreach ( $posts as $post ) : ?>
+				<div class="article carousel-list-item js_carousel_item">
+					<div class="thumbnail" style="background-image: url( '<?= $post[ 'featuredImage' ][ 'fallbackURL' ] ?>' );">
+						<div class="tag small text-uppercase"><?= $post[ 'category' ] ?></div>
+					</div>
+					<div class="description space-min-top-bottom">
+						<div class="title h5 text-teal strong space-min-bottom"><?= $post[ 'title' ] ?></div>
+						<div class="excerpt p"><?= $post[ 'excerpt' ] ?></div>
+					</div>
+					<a href="<?= $post[ 'slug' ] ?>" class="button block fill-teal">Read The Full Article</a>
 				</div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
-					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
-				</div>
-				<a href="" class="button block fill-teal">Read The Full Article</a>
-			</div>
-			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
-					<div class="tag small text-uppercase">Articles</div>
-				</div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 text-teal strong space-min-bottom">Loremald asdhasj ajdhsad</div>
-					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum minus soluta minima ipsam quaerat, molestiae! Porro minima, delectus commodi provident incidunt, expedita ex cum obcaecati rem fugit vitae perferendis hic.</div>
-				</div>
-				<a href="" class="button block fill-teal">Read The Full Article</a>
-			</div>
-			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
-					<div class="tag small text-uppercase">News</div>
-				</div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
-					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, consequuntur voluptatibus? Culpa velit ipsum veritatis quam facere, rerum aspernatur, iste, nobis eum nemo quod fugit architecto aperiam consequatur inventore quisquam.</div>
-				</div>
-				<a href="" class="button block fill-teal">Read The Full Article</a>
-			</div>
-			<div class="article carousel-list-item js_carousel_item">
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');">
-					<div class="tag small text-uppercase">Journal</div>
-				</div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 text-teal strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
-					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ea quisquam asperiores eligendi et corrupti sint, ullam porro quia, aut beatae praesentium animi consectetur voluptatum ex reiciendis id sequi nisi.</div>
-				</div>
-				<a href="" class="button block fill-teal">Read The Full Article</a>
-			</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="carousel-controls clearfix">
 			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-prev-dark.svg<?= $ver ?>"></button></div>
