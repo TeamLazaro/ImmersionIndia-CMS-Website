@@ -8,6 +8,9 @@
 require_once __DIR__ . '/../inc/above.php';
 
 
+/*
+ * ----- Fact Slides
+ */
 $slideGallery = [ ];
 $slidePosts = getPostsOf( 'slides' );
 foreach ( $slidePosts as $slide ) {
