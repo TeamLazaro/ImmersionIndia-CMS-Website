@@ -38,6 +38,36 @@ foreach ( $slidePosts as $slide ) {
 }
 
 
+/*
+ * ----- Programs
+ */
+$programs = [ ];
+$programPosts = getPostsOf( 'programs' );
+foreach ( $programPosts as $program ) {
+	$imageData = getContent( '', 'image', $program[ 'ID' ] );
+	$imageVersions = array_values( $imageData[ 'sizes' ] );
+	$urls = [ ];
+	for ( $_i = 0; $_i < count( $imageVersions ) / 3; $_i += 1 )
+		$urls[ ] = $imageVersions[ $_i * 3 ] . ' ' . $imageVersions[ $_i * 3 + 1 ] . 'w';
+
+	$type = getContent( '', 'type', $program[ 'ID' ] );
+	$bgColor = strtolower( $type ) === 'travel' ? 'pink' : 'teal';
+
+	$programs[ ] = [
+		'subject' => getContent( '', 'subject', $program[ 'ID' ] ),
+		'title' => $program[ 'post_title' ],
+		'type' => $type,
+		'bgColor' => $bgColor,
+		'image' => [
+			'fallbackURL' => $imageData[ 'url' ],
+			'srcsetURL' => implode( ', ', $urls )
+		],
+		'description' => getContent( '', 'description', $program[ 'ID' ] ),
+		'attachment' => getContent( '', 'details_pdf', $program[ 'ID' ] )[ 'url' ]
+	];
+}
+
+
 ?>
 
 
@@ -221,54 +251,20 @@ foreach ( $slidePosts as $slide ) {
 	</div>
 	<div class="programs row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%);">
 		<div class="carousel-list js_carousel_content">
-			<div class="program carousel-list-item js_carousel_item">
-				<div class="header fill-teal space-min">
-					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-virtual-light.svg<?= $ver ?>"><span>Virtual</span></div>
-					<div class="subject h6 text-uppercase">Technology</div>
+			<?php foreach ( $programs as $program ) : ?>
+				<div class="program carousel-list-item js_carousel_item">
+					<div class="header fill-<?= $program[ 'bgColor' ] ?> space-min">
+						<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-<?= strtolower( $program[ 'type' ] ) ?>-light.svg<?= $ver ?>"><span><?= $program[ 'type' ] ?></span></div>
+						<div class="subject h6 text-uppercase"><?= $program[ 'subject' ] ?></div>
+					</div>
+					<div class="thumbnail" style="background-image: url('<?= $program[ 'image' ][ 'fallbackURL' ] ?>');"></div>
+					<div class="description space-min-top-bottom">
+						<div class="title h5 strong space-min-bottom"><?= $program[ 'title' ] ?></div>
+						<div class="excerpt p"><?= $program[ 'description' ] ?></div>
+					</div>
+					<a href="<?= $program[ 'attachment' ] ?>" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
 				</div>
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 strong space-min-bottom">Tech Innovations in India & The Driving Force</div>
-					<div class="excerpt p">Industrial Automation is all about working smarter, faster, and more proficiently. Get a feel of how it’s done and an in-depth understanding of how a Bangalore-based AI solutions company improved ‘asset uptime’ and ‘operational efficiency’ for globally renowned manufacturing industries. The program includes student interactions, company visits and cultural experiences.<br><br>• Connect With AI Start-ups<br>• Visit R&amp;D Labs at the IISC<br>• Master Sessions from Experts</div>
-				</div>
-				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
-			</div>
-			<div class="program carousel-list-item js_carousel_item">
-				<div class="header fill-pink space-min">
-					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-travel-light.svg<?= $ver ?>"><span>Travel</span></div>
-					<div class="subject h6 text-uppercase">Sustainable Energy</div>
-				</div>
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 strong space-min-bottom">The UN's Highest Environmental Honour Awarded to an Indian Airport</div>
-					<div class="excerpt p">The world has no choice but to explore sustainable energy, and what better example to showcase than Cochin International Airport (CIAL) – the world’s first solar power airport. Get insider access to understand how an international airport is powered by solar energy. See long stretches of solar panels spread over 45 acres of unused land and more. An absolutely inspirational experience to encourage ideas that could reduce the carbon footprint of the energy sector. The program also includes company visits and cultural experiences.<br><br>• Airport Solar Farm<br>• Agrivoltaics - Solar Panels &amp; Crops<br>• Sneak-peak into Airport Operations<br>• Masterclass on Climate Governance</div>
-				</div>
-				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
-			</div>
-			<div class="program carousel-list-item js_carousel_item">
-				<div class="header fill-teal space-min">
-					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-virtual-light.svg<?= $ver ?>"><span>Virtual</span></div>
-					<div class="subject h6 text-uppercase">Economy</div>
-				</div>
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
-					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
-				</div>
-				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
-			</div>
-			<div class="program carousel-list-item js_carousel_item">
-				<div class="header fill-teal space-min">
-					<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-virtual-light.svg<?= $ver ?>"><span>Virtual</span></div>
-					<div class="subject h6 text-uppercase">Subject</div>
-				</div>
-				<div class="thumbnail" style="background-image: url('<?php echo "https://via.placeholder.com/800x600"; ?>');"></div>
-				<div class="description space-min-top-bottom">
-					<div class="title h5 strong space-min-bottom">Lorem ipsum dolor sit amet alfald asdhasj ajdhsad</div>
-					<div class="excerpt p">Consectetur adipisicing elit. Ipsa in ad similique non aliquam culpa libero eaque, earum laborum magnam ratione necessitatibus ea cupiditate dolor veniam reiciendis? Veniam, reprehenderit, voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, in. Adipisci nihil tenetur minima nobis enim, voluptatem nisi explicabo expedita incidunt laborum amet at minus accusantium doloremque. Ea, nisi, est!</div>
-				</div>
-				<a href="" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
-			</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="carousel-controls clearfix">
 			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-prev-dark.svg<?= $ver ?>"></button></div>

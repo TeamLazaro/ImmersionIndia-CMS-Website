@@ -125,6 +125,14 @@
 .programs-section .programs .program .description > * {
 	display: inline-block;
 }
+.programs-section .programs .program .description ul {
+	margin-left: 0.5rem;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+.programs-section .programs .program .description li {
+	margin-bottom: 0;
+}
 
 @media( min-width: 640px )  {
 	.programs-section .program-filter .toggle label input + .button .check {
