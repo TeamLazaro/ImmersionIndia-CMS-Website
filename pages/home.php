@@ -235,11 +235,11 @@ foreach ( $programPosts as $program ) {
 							</div>
 							<div class="row toggle">
 								<label class="columns small-7 medium-6 large-5 space-min-right space-min-bottom inline">
-									<input class="visuallyhidden" type="radio" name="program-toggle" value="virtual">
+									<input class="visuallyhidden js_program_filter" type="radio" name="program-toggle" value="virtual">
 									<span class="button block fill-teal"><span class="check"></span>Virtual Series</span>
 								</label>
 								<label class="columns small-7 medium-6 large-5 space-min-right space-min-bottom inline">
-									<input class="visuallyhidden" type="radio" name="program-toggle" value="Travel">
+									<input class="visuallyhidden js_program_filter" type="radio" name="program-toggle" value="travel">
 									<span class="button block fill-pink"><span class="check"></span>Travel Series</span>
 								</label>
 							</div>
@@ -252,7 +252,7 @@ foreach ( $programPosts as $program ) {
 	<div class="programs row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%); --fade-right: linear-gradient( to right, rgba(242, 243, 235, 0) 0%, rgba(242, 243, 235, 1) 50%);">
 		<div class="carousel-list js_carousel_content">
 			<?php foreach ( $programs as $program ) : ?>
-				<div class="program carousel-list-item js_carousel_item">
+				<div class="program carousel-list-item js_carousel_item js_program" data-program-type="<?= strtolower( $program[ 'type' ] ) ?>">
 					<div class="header fill-<?= $program[ 'bgColor' ] ?> space-min">
 						<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-<?= strtolower( $program[ 'type' ] ) ?>-light.svg<?= $ver ?>"><span><?= $program[ 'type' ] ?></span></div>
 						<div class="subject h6 text-uppercase"><?= $program[ 'subject' ] ?></div>
