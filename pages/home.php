@@ -282,7 +282,7 @@ foreach ( $postObjects as $postObject ) {
 						<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-<?= strtolower( $program[ 'type' ] ) ?>-light.svg<?= $ver ?>"><span><?= $program[ 'type' ] ?></span></div>
 						<div class="subject h6 text-uppercase"><?= $program[ 'subject' ] ?></div>
 					</div>
-					<div class="thumbnail" style="background-image: url('<?= $program[ 'image' ][ 'fallbackURL' ] ?>');"></div>
+					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $program[ 'image' ][ 'fallbackURL' ] ?>');"></div>
 					<div class="description space-min-top-bottom">
 						<div class="title h5 strong space-min-bottom"><?= $program[ 'title' ] ?></div>
 						<div class="excerpt p"><?= $program[ 'description' ] ?></div>
@@ -336,7 +336,7 @@ foreach ( $postObjects as $postObject ) {
 		<div class="carousel-list js_carousel_content">
 			<?php foreach ( $posts as $post ) : ?>
 				<div class="article carousel-list-item js_carousel_item js_post" data-category="<?= strtolower( $post[ 'category' ] ) ?>">
-					<div class="thumbnail" style="background-image: url( '<?= $post[ 'featuredImage' ][ 'fallbackURL' ] ?>' );">
+					<div class="thumbnail fill-neutral-3" style="background-image: url( '<?= $post[ 'featuredImage' ][ 'fallbackURL' ] ?>' );">
 						<div class="tag small text-uppercase"><?= $post[ 'category' ] ?></div>
 					</div>
 					<div class="description space-min-top-bottom">
@@ -488,12 +488,29 @@ foreach ( $postObjects as $postObject ) {
 						<div class="p space-min-bottom">The long-term working partnerships we’ve forged with many of our clients stand testament to the seamless study programs we’ve curated. Our experiences are completely flexible and we are happy to tackle any aspect of your visit, right from managing the whole trip to simply giving you an experienced set of hands on site.</div>
 						<div class="p">Team up with us and ‘Let India Happen To You’!</div>
 					</div>
-					<!-- Team -->
-					<!-- END: Team -->
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Team -->
+	<div class="members row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 1) 50%); --fade-right: linear-gradient( to right, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 1) 50%);">
+		<div class="carousel-list js_carousel_content">
+			<?php foreach ( $members as $member ) : ?>
+				<div class="member carousel-list-item js_carousel_item js_program">
+					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $member[ 'image' ][ 'fallbackURL' ] ?>');"></div>
+					<div class="description space-min-top-bottom">
+						<div class="name h5 strong space-min-bottom"><?= $member[ 'name' ] ?></div>
+						<div class="designation p"><?= $member[ 'designation' ] ?></div>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		</div>
+		<div class="carousel-controls clearfix">
+			<div class="prev float-left"><button class="button js_pager" data-dir="left"><img class="block" src="../media/icon/icon-prev-light.svg<?= $ver ?>"></button></div>
+			<div class="next float-right"><button class="button js_pager" data-dir="right"><img class="block" src="../media/icon/icon-next-light.svg<?= $ver ?>"></button></div>
+		</div>
+	</div>
+	<!-- END: Team -->
 </section>
 <!-- END: Team Section -->
 

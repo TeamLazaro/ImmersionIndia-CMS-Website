@@ -39,9 +39,6 @@ $navigationMenuItems = getNavigationMenu( 'Primary' );
 					<img src="../media/logo-immersion-light.svg<?= $ver ?>">
 				</a>
 			</div>
-			<!-- <div class="columns small-4 medium-5 inline-middle text-right">
-				<button class="menu button fill-neutral-1 inline w-500" style="box-shadow: 0 0 0 2px rgba(35, 31, 32, 1);">Menu</button>
-			</div> -->
 		</div>
 	</div>
 </section>
