@@ -97,6 +97,20 @@ foreach ( $postObjects as $postObject ) {
 }
 $postCategories = array_keys( $postCategories );
 
+
+/*
+ * ----- Members
+ */
+$members = [ ];
+$memberObjects = getPostsOf( 'members' );
+foreach ( $memberObjects as $memberObject ) {	
+	$members[ ] = [
+		'name' => $memberObject[ 'post_title' ],
+		'designation' => getContent( '', 'designation', $memberObject[ 'ID' ] ),
+		'image' => getContent( '', 'image -> sizes -> small', $memberObject[ 'ID' ] )
+	];
+}
+
 ?>
 
 
@@ -495,7 +509,7 @@ $postCategories = array_keys( $postCategories );
 		<div class="carousel-list js_carousel_content">
 			<?php foreach ( $members as $member ) : ?>
 				<div class="member carousel-list-item js_carousel_item js_program">
-					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $member[ 'image' ][ 'fallbackURL' ] ?>');"></div>
+					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $member[ 'image' ] ?>');"></div>
 					<div class="description space-min-top-bottom">
 						<div class="name h5 strong space-min-bottom"><?= $member[ 'name' ] ?></div>
 						<div class="designation p"><?= $member[ 'designation' ] ?></div>
