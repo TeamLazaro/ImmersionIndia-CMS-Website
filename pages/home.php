@@ -107,7 +107,8 @@ foreach ( $memberObjects as $memberObject ) {
 	$members[ ] = [
 		'name' => $memberObject[ 'post_title' ],
 		'designation' => getContent( '', 'designation', $memberObject[ 'ID' ] ),
-		'image' => getContent( '', 'image -> sizes -> small', $memberObject[ 'ID' ] )
+		'image' => getContent( '', 'image -> sizes -> small', $memberObject[ 'ID' ] ),
+		'filter_black_white' => getContent( '', 'filter_black_white', $memberObject[ 'ID' ] )
 	];
 }
 
@@ -488,7 +489,7 @@ foreach ( $memberObjects as $memberObject ) {
 
 <!-- Team Section -->
 <section class="team-section space-100-top-bottom fill-dark" data-section-title="Team Section" data-section-slug="team-section">
-	<div class="row">
+	<div class="row space-50-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div class="h2 text-uppercase space-min-bottom">Meet the Team</div>
@@ -509,10 +510,10 @@ foreach ( $memberObjects as $memberObject ) {
 		<div class="carousel-list js_carousel_content">
 			<?php foreach ( $members as $member ) : ?>
 				<div class="member carousel-list-item js_carousel_item js_program">
-					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $member[ 'image' ] ?>');"></div>
-					<div class="description space-min-top-bottom">
-						<div class="name h5 strong space-min-bottom"><?= $member[ 'name' ] ?></div>
-						<div class="designation p"><?= $member[ 'designation' ] ?></div>
+					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $member[ 'image' ] ?>'); <?php if ( $member['filter_black_white'] ) : ?> filter: grayscale(1);<?php endif; ?>"></div>
+					<div class="info space-min-top-bottom">
+						<div class="name h4 w-400"><?= $member[ 'name' ] ?></div>
+						<div class="designation p text-orange text-uppercase"><?= $member[ 'designation' ] ?></div>
 					</div>
 				</div>
 			<?php endforeach; ?>
