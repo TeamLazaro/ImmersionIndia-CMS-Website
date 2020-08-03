@@ -13,7 +13,7 @@ if( !empty($featuredImageHeight) )
 
 
 <!-- Landing Section -->
-<section class="landing-section fill-dark" data-section-title="Landing Section" data-section-slug="landing-section">
+<section class="landing-section fill-dark js_sticky_marker" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-image-bg">
 		<div class="image" style="background-image: url( '<?= get_the_post_thumbnail_url($thePost['ID']) ?: 'https://via.placeholder.com/1500' ?>' );"></div>
 	</div>

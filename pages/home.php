@@ -119,7 +119,7 @@ foreach ( $memberObjects as $memberObject ) {
 
 
 <!-- Landing Section -->
-<section class="landing-section fill-dark" data-section-title="Landing Section" data-section-slug="landing-section">
+<section class="landing-section fill-dark js_sticky_marker" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-video-bg">
 		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="uYX4uDXS3Kw" data-loop="true" data-autoplay="true" style="padding-top: 51.85%;">
 			<div class="video-embed-placeholder" style="background-image: url( 'https://via.placeholder.com/1500' );"></div>
