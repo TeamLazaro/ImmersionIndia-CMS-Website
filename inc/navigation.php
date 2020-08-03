@@ -49,7 +49,7 @@ $navigationMenuItems = getNavigationMenu( 'Primary' );
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
-				<button class="menu button inline w-500"><i class="material-icons">menu</i> Menu</button>
+				<button class="menu button inline w-500 js_nav_open"><i class="material-icons">menu</i> Menu</button>
 			</div>
 		</div>
 	</div>
@@ -61,7 +61,7 @@ $navigationMenuItems = getNavigationMenu( 'Primary' );
 	<div class="container">
 		<div class="row">
 			<div class="navigation-list columns small-12 medium-8 medium-offset-4 large-6 large-offset-6 xlarge-5 xlarge-offset-7 fill-dark space-75-top-bottom space-100-left-right">
-				<div class="close-button button fill-orange"><i class="material-icons">close</i></div>
+				<div class="close-button button fill-orange js_nav_close"><i class="material-icons">close</i></div>
 				<div class="title h2 strong opacity-50 text-uppercase space-25-bottom">Menu</div>
 				<div class="h4"><a class="link space-min-top-bottom" href=""><span class="l">Home</span></a></div>
 				<div class="h4"><a class="link active space-min-top-bottom" href=""><span class="l">Why Us</span></a></div>
@@ -73,6 +73,6 @@ $navigationMenuItems = getNavigationMenu( 'Primary' );
 			</div>
 		</div>
 	</div>
-	<div class="close-area cursor-pointer"></div>
+	<div class="close-area cursor-pointer js_nav_close"></div>
 </section>
 <!-- END: Navigation Section -->
