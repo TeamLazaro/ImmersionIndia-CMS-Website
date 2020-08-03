@@ -45,7 +45,7 @@ $navigationMenuItems = getNavigationMenu( 'Primary' );
 <!-- END: Header Section -->
 
 <!-- Menu Section -->
-<section class="menu-section space-25-top-bottom">
+<section class="menu-section space-25-top-bottom js_nav_open_trigger">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
