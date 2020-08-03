@@ -287,7 +287,7 @@ foreach ( $postObjects as $postObject ) {
 						<div class="title h5 strong space-min-bottom"><?= $program[ 'title' ] ?></div>
 						<div class="excerpt p"><?= $program[ 'description' ] ?></div>
 					</div>
-					<a href="<?= $program[ 'attachment' ] ?>" class="button block fill-pink">Customize <span class="hide-for-small">This </span>Program</a>
+					<a href="<?= $program[ 'attachment' ] ?>" class="button block fill-<?= $program[ 'bgColor' ] ?>">Customize <span class="hide-for-small">This </span>Program</a>
 				</div>
 			<?php endforeach; ?>
 		</div>

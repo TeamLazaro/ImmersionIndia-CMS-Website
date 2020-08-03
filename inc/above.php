@@ -72,7 +72,7 @@ http_response_code( 200 );
 
 	<?php require_once 'head.php'; ?>
 
-	<body id="body" class="body open-navigation">
+	<body id="body" class="body">
 
 		<?php
 			/*
