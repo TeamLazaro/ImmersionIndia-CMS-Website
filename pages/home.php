@@ -72,6 +72,7 @@ foreach ( $programPosts as $program ) {
  * ----- Posts
  */
 $posts = [ ];
+$postCategories = [ ];
 $postObjects = getPostsOf( 'post' );
 foreach ( $postObjects as $postObject ) {
 	$featuredImage = get_the_post_thumbnail_url( $postObject[ 'ID' ] );
@@ -80,6 +81,8 @@ foreach ( $postObjects as $postObject ) {
 		$category = '';
 	else
 		$category = $categories[ 0 ]->name;
+	$postCategories[ $category ] = true;
+
 	$excerpt = $postObject[ 'post_excerpt' ] ?: substr( wp_strip_all_tags( $postObject[ 'post_content' ] ), 0, 415 );
 
 	$posts[ ] = [
@@ -92,6 +95,7 @@ foreach ( $postObjects as $postObject ) {
 		'excerpt' => $excerpt
 	];
 }
+$postCategories = array_keys( $postCategories );
 
 ?>
 
@@ -315,18 +319,12 @@ foreach ( $postObjects as $postObject ) {
 						<span class="inline-middle">Select to Filter by Type of Articles</span>
 					</div>
 					<div class="toggle">
-						<label class="tag inline">
-							<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="journal">
-							<span class="p"><span class="check"></span>Journals</span>
-						</label>
-						<label class="tag inline">
-							<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="article">
-							<span class="p"><span class="check"></span>Articles</span>
-						</label>
-						<label class="tag inline">
-							<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="news">
-							<span class="p"><span class="check"></span>News</span>
-						</label>
+						<?php foreach ( $postCategories as $category ) : ?>
+							<label class="tag inline">
+								<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="<?= strtolower( $category ) ?>">
+								<span class="p"><span class="check"></span><?= $category ?></span>
+							</label>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
