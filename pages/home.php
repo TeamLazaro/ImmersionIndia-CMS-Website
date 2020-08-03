@@ -316,15 +316,15 @@ foreach ( $postObjects as $postObject ) {
 					</div>
 					<div class="toggle">
 						<label class="tag inline">
-							<input class="visuallyhidden" type="checkbox" name="article-toggle" value="journals">
+							<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="journal">
 							<span class="p"><span class="check"></span>Journals</span>
 						</label>
 						<label class="tag inline">
-							<input class="visuallyhidden" type="checkbox" name="article-toggle" value="articles">
+							<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="article">
 							<span class="p"><span class="check"></span>Articles</span>
 						</label>
 						<label class="tag inline">
-							<input class="visuallyhidden" type="checkbox" name="article-toggle" value="news">
+							<input class="visuallyhidden js_post_filter" type="checkbox" name="article-toggle" value="news">
 							<span class="p"><span class="check"></span>News</span>
 						</label>
 					</div>
@@ -335,7 +335,7 @@ foreach ( $postObjects as $postObject ) {
 	<div class="articles row carousel js_carousel_container" style="--fade-left: linear-gradient( to left, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%); --fade-right: linear-gradient( to right, rgba(227, 226, 216, 0) 0%, rgba(227, 226, 216, 1) 50%);">
 		<div class="carousel-list js_carousel_content">
 			<?php foreach ( $posts as $post ) : ?>
-				<div class="article carousel-list-item js_carousel_item">
+				<div class="article carousel-list-item js_carousel_item js_post" data-category="<?= strtolower( $post[ 'category' ] ) ?>">
 					<div class="thumbnail" style="background-image: url( '<?= $post[ 'featuredImage' ][ 'fallbackURL' ] ?>' );">
 						<div class="tag small text-uppercase"><?= $post[ 'category' ] ?></div>
 					</div>

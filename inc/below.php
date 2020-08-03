@@ -75,6 +75,7 @@
 	<script type="text/javascript" src="/plugins/slick/slick.min.js<?php echo $ver ?>"></script>
 
 	<script type="text/javascript" src="/js/programs.js<?php echo $ver ?>"></script>
+	<script type="text/javascript" src="/js/articles.js<?php echo $ver ?>"></script>
 
 	<script type="text/javascript">
 
