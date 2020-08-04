@@ -425,31 +425,31 @@ foreach ( $memberObjects as $memberObject ) {
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase required">Full Name</span>
-									<input type="text" class="block">
+									<input type="text" id="js_form_input_name" class="block" required>
 								</label>
 							</div>
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase required">Email ID</span>
-									<input type="text" class="block">
+									<input type="text" id="js_form_input_email" class="block" required>
 								</label>
 							</div>
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase">Phone Number</span>
-									<input type="text" class="block">
+									<input type="text" id="js_form_input_phone" class="block">
 								</label>
 							</div>
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase">College/University</span>
-									<input type="text" class="block">
+									<input type="text" id="js_form_input_institution" class="block">
 								</label>
 							</div>
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase">Choose a Program</span>
-									<select class="block">
+									<select class="block" id="js_form_input_program">
 										<option value="" disabled>-- Select Program --</option>
 										<?php foreach ( $programs as $program ) : ?>
 											<option id="<?= $program[ 'id' ] ?>" value="[ <?= $program[ 'subject' ] ?> ] <?= $program[ 'title' ] ?>"><?= $program[ 'title' ] ?></option>
@@ -460,7 +460,7 @@ foreach ( $memberObjects as $memberObject ) {
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase">Suggest a Date</span>
-									<input type="text" class="block">
+									<input type="date" id="js_form_input_date" class="block">
 								</label>
 							</div>
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
