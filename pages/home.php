@@ -420,7 +420,7 @@ foreach ( $memberObjects as $memberObject ) {
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-pink"></span></div>
 					<div class="form columns small-12 large-10">
 						<!-- Form -->
-						<div class="row space-50-bottom">
+						<form class="row space-50-bottom js_enquiry_form">
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase required">Full Name</span>
@@ -463,10 +463,10 @@ foreach ( $memberObjects as $memberObject ) {
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase invisible">Submit</span>
-									<button class="block fill-pink">Submit</button>
+									<button class="block fill-pink" type="submit">Submit</button>
 								</label>
 							</div>
-						</div>
+						</form>
 						<!-- END: Form -->
 						<div class="email-action">
 							<a href="mailto:vineeth@immersionindia.com" target="_blank" class="block fill-neutral-2 space-50" tabindex="-1">
