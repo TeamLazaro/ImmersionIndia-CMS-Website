@@ -9,6 +9,14 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 /*
+ * ----- Fallback Images
+ */
+$heroVideoFallbackImage = getContent( '', 'home_landing_video_fallback_image -> sizes -> large' );
+$thumbnailFallbackImage = getContent( '', 'list_item_thumbnail_fallback_image -> sizes -> small' );
+
+
+
+/*
  * ----- Fact Slides
  */
 $slideGallery = [ ];
@@ -44,12 +52,6 @@ foreach ( $slidePosts as $slide ) {
 $programs = [ ];
 $programPosts = getPostsOf( 'programs' );
 foreach ( $programPosts as $program ) {
-	$imageData = getContent( '', 'image', $program[ 'ID' ] );
-	$imageVersions = array_values( $imageData[ 'sizes' ] );
-	$urls = [ ];
-	for ( $_i = 0; $_i < count( $imageVersions ) / 3; $_i += 1 )
-		$urls[ ] = $imageVersions[ $_i * 3 ] . ' ' . $imageVersions[ $_i * 3 + 1 ] . 'w';
-
 	$type = getContent( '', 'type', $program[ 'ID' ] );
 	$bgColor = strtolower( $type ) === 'travel' ? 'pink' : 'teal';
 
@@ -59,10 +61,7 @@ foreach ( $programPosts as $program ) {
 		'title' => $program[ 'post_title' ],
 		'type' => $type,
 		'bgColor' => $bgColor,
-		'image' => [
-			'fallbackURL' => $imageData[ 'url' ],
-			'srcsetURL' => implode( ', ', $urls )
-		],
+		'image' => getContent( null, 'image -> sizes -> small', $program[ 'ID' ] ),
 		'description' => getContent( '', 'description', $program[ 'ID' ] ),
 		'attachment' => getContent( '', 'details_pdf', $program[ 'ID' ] )[ 'url' ]
 	];
@@ -90,9 +89,7 @@ foreach ( $postObjects as $postObject ) {
 		'title' => $postObject[ 'post_title' ],
 		'slug' => $postObject[ 'post_name' ],
 		'category' => $category,
-		'featuredImage' => [
-			'fallbackURL' => $featuredImage
-		],
+		'featuredImage' => $featuredImage,
 		'excerpt' => $excerpt
 	];
 }
@@ -124,7 +121,7 @@ foreach ( $memberObjects as $memberObject ) {
 <section class="landing-section fill-dark js_sticky_marker" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-video-bg">
 		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="uYX4uDXS3Kw" data-loop="true" data-autoplay="true" style="padding-top: 51.85%;">
-			<div class="video-embed-placeholder" style="background-image: url( 'https://via.placeholder.com/1500' );"></div>
+			<div class="video-embed-placeholder" style="background-image: url( <?= $heroVideoFallbackImage ?> );"></div>
 			<!-- <div class="video-loading-indicator"></div> -->
 		</div>
 	</div>
@@ -302,7 +299,7 @@ foreach ( $memberObjects as $memberObject ) {
 						<div class="type label text-uppercase"><img width="16" src="../media/icon/icon-<?= strtolower( $program[ 'type' ] ) ?>-light.svg<?= $ver ?>"><span><?= $program[ 'type' ] ?></span></div>
 						<div class="subject h6 text-uppercase"><?= $program[ 'subject' ] ?></div>
 					</div>
-					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $program[ 'image' ][ 'fallbackURL' ] ?>');"></div>
+					<div class="thumbnail fill-neutral-3" style="background-image: url('<?= $program[ 'image' ] ?: $thumbnailFallbackImage ?>');"></div>
 					<div class="description space-min-top-bottom">
 						<div class="title h5 strong space-min-bottom"><?= $program[ 'title' ] ?></div>
 						<div class="excerpt p"><?= $program[ 'description' ] ?></div>
@@ -350,7 +347,7 @@ foreach ( $memberObjects as $memberObject ) {
 		<div class="carousel-list js_carousel_content">
 			<?php foreach ( $posts as $post ) : ?>
 				<div class="article carousel-list-item js_carousel_item js_post" data-category="<?= strtolower( $post[ 'category' ] ) ?>">
-					<div class="thumbnail fill-neutral-3" style="background-image: url( '<?= $post[ 'featuredImage' ][ 'fallbackURL' ] ?>' );">
+					<div class="thumbnail fill-neutral-3" style="background-image: url( '<?= $post[ 'featuredImage' ] ?: $thumbnailFallbackImage ?>' );">
 						<div class="tag small text-uppercase"><?= $post[ 'category' ] ?></div>
 					</div>
 					<div class="description space-min-top-bottom">
