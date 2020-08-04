@@ -15,6 +15,10 @@ $( function () {
 		var programType = $( event.target ).val()
 		$allPrograms.filter( ":not( [ data-program-type = '" + programType + "' ] )" ).hide()
 		$allPrograms.filter( "[ data-program-type = '" + programType + "' ]" ).show()
+
+		// Set the filter status message
+		var formattedProgramType = programType[ 0 ].toUpperCase() + programType.slice( 1 ) + " Series";
+		$( ".js_program_filter_status_message" ).html( "Filtered by: <b>" + formattedProgramType + "</b>" )
 	} );
 
 	/*

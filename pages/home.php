@@ -273,7 +273,7 @@ foreach ( $memberObjects as $memberObject ) {
 						<div class="program-filter space-25-top-bottom">
 							<div class="feedback p text-neutral-4 opacity-50 space-min-bottom">
 								<img class="inline-middle" width="16" src="../media/icon/icon-filter-dark.svg<?= $ver ?>">
-								<span class="inline-middle">Select to Filter by Virtual or Travel Programs</span>
+								<span class="inline-middle js_program_filter_status_message">Select to Filter by Virtual or Travel Programs</span>
 							</div>
 							<div class="row toggle">
 								<label class="columns small-7 medium-6 large-5 space-min-right space-min-bottom inline">
