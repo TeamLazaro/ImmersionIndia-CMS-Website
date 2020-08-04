@@ -15,9 +15,10 @@ function waitFor ( seconds ) {
 }
 
 
+
 /*
  *
- *
+ * Managerial Hub for "scroll" event handlers
  *
  */
 function onScroll ( fn ) {
