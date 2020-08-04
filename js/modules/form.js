@@ -86,7 +86,163 @@ BFSForm.prototype.getData = function getData () {
 
 
 
+
+
+/*
+ * ----- Set up the enquiry form
+ */
+var enquiryForm = new BFSForm( "js_enquiry_form" );
+	var domInputName = document.getElementById( "js_form_input_name" );
+	var domInputEmail = document.getElementById( "js_form_input_email" );
+	var domInputPhoneNumber = document.getElementById( "js_form_input_phone" );
+	var domInputInstitution = document.getElementById( "js_form_input_institution" );
+	var domInputProgram = document.getElementById( "js_form_input_program" );
+	var domInputDate = document.getElementById( "js_form_input_date" );
+
+// Set up the enquiry form's input fields, data validators and data assemblers
+	// Name
+enquiryForm.addField( "name", true, domInputName, function ( values, isRequired ) {
+	var name = values[ 0 ].trim();
+
+	if ( isRequired )
+		if ( name === "" )
+			throw new Error( "Please provide your name." );
+
+	if ( name.match( /\d/ ) )
+		throw new Error( "Please provide a valid name." );
+
+	return name;
+} );
+
+	// Email address
+enquiryForm.addField( "emailAddress", true, domInputEmail, function ( values, isRequired ) {
+	var emailAddress = values[ 0 ].trim();
+
+	if ( isRequired )
+		if ( emailAddress === "" )
+			throw new Error( "Please provide your email address." );
+
+	if ( emailAddress.indexOf( "@" ) === -1 )
+		throw new Error( "Please provide a valid email address." );
+
+	return emailAddress;
+} );
+
+	// Phone number
+enquiryForm.addField( "phoneNumber", false, domInputPhoneNumber, function ( values ) {
+	var phoneNumber = values[ 0 ].trim();
+
+	if ( phoneNumber.length > 1 )
+		if ( ! (
+			phoneNumber.match( /^\+?\d[\d\-]+\d$/ )	// this is not a perfect regex, but it's close
+			&& phoneNumber.replace( /\D/g, "" ).length > 3
+		) )
+			throw new Error( "Please provide a valid phone number." );
+
+	return phoneNumber;
+} );
+
+	// College / University
+enquiryForm.addField( "institution", false, domInputInstitution, function ( values ) {
+	var institution = values[ 0 ].trim();
+
+	if ( institution.length > 1 )
+		if ( institution.replace( /[\d\s]/g ).length < 2 )
+			throw new Error( "Please provide a college or university." );
+
+	return institution;
+} );
+
+	// Study Program
+enquiryForm.addField( "program", false, domInputProgram, function ( values ) {
+	var program = values[ 0 ].trim();
+	return program;
+} );
+
+	// Date
+enquiryForm.addField( "date", false, domInputDate, function ( values ) {
+	var date = values[ 0 ].trim();
+	return date;
+} );
+
+enquiryForm.submit = function submit () {
+
+	// var apiEndpoint = __.settings.cupidApiEndpoint;
+	var url = "/server/api/post-enquiry-data.php";
+
+	var ajaxRequest = $.ajax( {
+		url: url,
+		method: "POST",
+		data: JSON.stringify( { data: this.data } ),
+		contentType: "application/json",
+		dataType: "json",
+		// xhrFields: {
+		// 	withCredentials: true
+		// }
 	} );
+
+	return new Promise( function ( resolve, reject ) {
+		ajaxRequest.done( function ( response ) {
+			resolve( response );
+		} );
+		ajaxRequest.fail( function ( jqXHR, textStatus, e ) {
+			var errorResponse = BFSForm.getErrorResponse( jqXHR, textStatus, e );
+			reject( errorResponse );
+		} );
+	} );
+
+}
+
+
+
+
+/*
+ * ----- Enquiry Form submission handler
+ */
+$( document ).on( "submit", ".js_enquiry_form", function ( event ) {
+
+	/*
+	 * ----- Prevent default browser behaviour
+	 */
+	event.preventDefault();
+
+	/*
+	 * ----- Prevent interaction with the form
+	 */
+	enquiryForm.disable();
+
+	/*
+	 * ----- Provide feedback to the user
+	 */
+	enquiryForm.giveFeedback( "Sending..." );
+
+	/*
+	 * ----- Extract data (and report issues if found)
+	 */
+	var data;
+	try {
+		data = enquiryForm.getData();
+	} catch ( error ) {
+		alert( error.message )
+		console.error( error.message )
+		return;
+	}
+
+	/*
+	 * ----- Submit data
+	 */
+	enquiryForm.submit( data )
+		.then( function ( response ) {
+			console.log( response )
+
+			/*
+			 * ----- Provide further feedback to the user
+			 */
+			enquiryForm.giveFeedback( "We'll get in touch shortly" );
+
+		} )
+
+} );
 
 
 
