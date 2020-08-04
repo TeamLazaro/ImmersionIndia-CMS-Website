@@ -87,6 +87,10 @@
 	padding: 2px 1px;
 	font-size: 0;
 }
+.post-section .wp-block-gallery.wp-block-gallery {
+	margin-bottom: var(--space-25);
+}
+
 .post-section .wp-block-gallery figcaption {
 	position: absolute;
 	top: 0;
