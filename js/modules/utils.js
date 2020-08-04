@@ -18,6 +18,27 @@ function waitFor ( seconds ) {
 
 /*
  *
+ * Smooth scroll to a section
+ *
+ */
+function smoothScrollTo ( locationHash ) {
+
+	if ( ! locationHash )
+		return;
+
+	var locationId = locationHash.replace( "#", "" );
+	var domLocation = document.getElementById( locationId );
+	if ( ! domLocation )
+		return;
+
+	window.scrollTo( { top: domLocation.offsetTop, behavior: "smooth" } );
+
+}
+
+
+
+/*
+ *
  * Managerial Hub for "scroll" event handlers
  *
  */
