@@ -307,7 +307,7 @@ foreach ( $memberObjects as $memberObject ) {
 						<div class="title h5 strong space-min-bottom"><?= $program[ 'title' ] ?></div>
 						<div class="excerpt p"><?= $program[ 'description' ] ?></div>
 					</div>
-					<a href="<?= $program[ 'attachment' ] ?>" class="button block fill-<?= $program[ 'bgColor' ] ?>">Customize <span class="hide-for-small">This </span>Program</a>
+					<a class="button block fill-<?= $program[ 'bgColor' ] ?> js_select_program" data-program-id="<?= $program[ 'id' ] ?>">Customize <span class="hide-for-small">This </span>Program</a>
 				</div>
 			<?php endforeach; ?>
 		</div>
@@ -412,7 +412,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Quote Section -->
 
 <!-- Booking Section -->
-<section class="booking-section space-100-top-bottom fill-neutral-1" data-section-title="Booking Section" data-section-slug="booking-section">
+<section class="booking-section space-100-top-bottom fill-neutral-1" id="section-booking" data-section-title="Booking Section" data-section-slug="booking-section">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">

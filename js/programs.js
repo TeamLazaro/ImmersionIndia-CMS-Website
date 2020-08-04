@@ -17,4 +17,21 @@ $( function () {
 		$allPrograms.filter( "[ data-program-type = '" + programType + "' ]" ).show()
 	} );
 
+	/*
+	 * ----- On clicking "Customize this Program" against a Program, navigate to the Enquiry Form and auto-select the program
+	 */
+	var domProgramInput = document.getElementById( "js_form_input_program" );
+	var $programInput = $( domProgramInput );
+	$( document ).on( "click", ".js_select_program", function ( event ) {
+		event.preventDefault();
+
+		// Get and Set the program on the Program input field
+		var programId = $( event.target ).data( "program-id" );
+		var value = $programInput.find( "#" + programId ).attr( "value" );
+		domProgramInput.value = value;
+
+		// Scroll to the form
+		smoothScrollTo( "section-booking" );
+	} );
+
 } );
