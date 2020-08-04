@@ -13,14 +13,7 @@
 .post-section p {
 	display: block;
 	margin-bottom: var(--space-25);
-/*	margin: 0;
-	display: inline;
-	color: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
-	letter-spacing: inherit;
-*/}
+}
 
 .post-section h1, .post-section h2, .post-section h3, .post-section h4 {
 	font-family: 'futura-pt', 'Arial Black', Arial, sans-serif;
@@ -72,6 +65,19 @@
 	.post-section p 	{ font-size: 1.8rem;  }
 	.post-section small { font-size: 1.2rem; }
 	.post-section label { font-size: 1.4rem; }
+}
+
+.post-section ul {
+	position: relative;
+	list-style: inherit;
+	padding-left: var(--space-25);
+}
+.post-section ul li {
+	padding-left: var(--space-25);
+}
+.post-section hr {
+	margin: var(--space-25) 0;
+	border-color: var(--orange);
 }
 
 
