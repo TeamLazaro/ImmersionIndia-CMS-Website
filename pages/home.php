@@ -54,6 +54,7 @@ foreach ( $programPosts as $program ) {
 	$bgColor = strtolower( $type ) === 'travel' ? 'pink' : 'teal';
 
 	$programs[ ] = [
+		'id' => $program[ 'ID' ],
 		'subject' => getContent( '', 'subject', $program[ 'ID' ] ),
 		'title' => $program[ 'post_title' ],
 		'type' => $type,
@@ -448,7 +449,12 @@ foreach ( $memberObjects as $memberObject ) {
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase">Choose a Program</span>
-									<input type="text" class="block">
+									<select class="block">
+										<option value="" disabled>-- Select Program --</option>
+										<?php foreach ( $programs as $program ) : ?>
+											<option id="<?= $program[ 'id' ] ?>" value="[ <?= $program[ 'subject' ] ?> ] <?= $program[ 'title' ] ?>"><?= $program[ 'title' ] ?></option>
+										<?php endforeach; ?>
+									</select>
 								</label>
 							</div>
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
