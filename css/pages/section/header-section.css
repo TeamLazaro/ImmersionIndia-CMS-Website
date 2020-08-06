@@ -32,10 +32,10 @@
 }
 
 .header-section .logo:before {
-	left: 100%;
+	left: 99%;
 }
 .header-section .logo:after {
-	right: 100%;	
+	right: 99%;	
 }
 
 @media( min-width: 640px )  {

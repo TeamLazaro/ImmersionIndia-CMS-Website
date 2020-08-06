@@ -336,7 +336,7 @@ input[type="date"],
 textarea,
 select {
 	height: var(--space-75);
-	padding: 11px var(--space-min);
+	padding: 0 var(--space-min);
 	font-size: 1.4rem;
 	color: var(--dark);
 	/*background-color: var(--light);*/
@@ -378,7 +378,13 @@ select:focus {
 	border-color: var(--pink);
 }
 
-select { cursor: pointer; }
+select {
+	cursor: pointer;
+	background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 10px 10px;
+    background-image: url(../media/icon-select-arrow.svg);
+}
 
 @media( min-width: 640px )  {
 	.input-field,
