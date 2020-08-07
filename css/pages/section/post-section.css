@@ -67,12 +67,12 @@
 	.post-section label { font-size: 1.4rem; }
 }
 
-.post-section ul {
+.post-section ul:not(.slick-slider) {
 	position: relative;
 	list-style: inherit;
 	padding-left: var(--space-25);
 }
-.post-section ul li {
+.post-section ul:not(.slick-slider) li:not(.slick-slide) {
 	padding-left: var(--space-25);
 }
 .post-section hr {
