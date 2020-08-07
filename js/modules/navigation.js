@@ -21,6 +21,12 @@ function stickNavigationMenuOpenButton () {
 function unstickNavigationMenuOpenButton () {
 	$navigationMenuOpenTriggerRegion.removeClass( "fixed" );
 }
+function openNavigationMenu () {
+	$( document.body ).addClass( "open-navigation" );
+}
+function closeNavigationMenu () {
+	$( document.body ).removeClass( "open-navigation" );
+}
 
 var $stickyMarker = $( ".js_sticky_marker" );
 
@@ -35,11 +41,11 @@ var $stickyMarker = $( ".js_sticky_marker" );
  */
 // Opening
 $( document ).on( "click", ".js_nav_open", function ( event ) {
-	$( document.body ).addClass( "open-navigation" );
+	openNavigationMenu();
 } );
 // Closing
 $( document ).on( "click", ".js_nav_close", function ( event ) {
-	$( document.body ).removeClass( "open-navigation" );
+	closeNavigationMenu();
 } );
 
 
