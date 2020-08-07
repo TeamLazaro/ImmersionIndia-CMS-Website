@@ -33,6 +33,8 @@ $( function () {
 		var programId = $( event.target ).data( "program-id" );
 		var value = $programInput.find( "#" + programId ).attr( "value" );
 		domProgramInput.value = value;
+			// So that all the other attached event handlers fire
+		$programInput.trigger( "change" );
 
 		// Scroll to the form
 		smoothScrollTo( "section-booking" );

@@ -446,6 +446,7 @@ foreach ( $memberObjects as $memberObject ) {
 							<div class="form-row columns small-12 medium-6 space-min-bottom">
 								<label>
 									<span class="label strong text-uppercase">Choose a Program</span>
+									<input type="hidden" id="js_form_input_program_id" name="program-id">
 									<select class="block" id="js_form_input_program">
 										<option value="" disabled>-- Select Program --</option>
 										<?php foreach ( $programs as $program ) : ?>

@@ -71,6 +71,7 @@ if ( empty( $input[ 'name' ] ) or empty( $input[ 'emailAddress' ] ) ) {
 //  \-------------------------------------- */
 // require_once __DIR__ . '/../../inc/datetime.php';
 require_once __DIR__ . '/../google-forms.php';
+require_once __DIR__ . '/../mailer.php';
 
 
 
@@ -83,6 +84,7 @@ $nameOfPerson = $input[ 'name' ];
 $emailAddress = $input[ 'emailAddress' ];
 $phoneNumber = $input[ 'phoneNumber' ] ?? '';
 $institution = $input[ 'institution' ] ?? '';
+$programId = (int) ( $input[ 'programId' ] ?? '' );
 $program = $input[ 'program' ] ?? '';
 $date = $input[ 'date' ] ?? '';
 
@@ -103,6 +105,44 @@ $data = [
 
 // Submit data to the spreadsheet
 GoogleForms\submitEnquiry( $data );
+
+
+
+/* ------------------------------------- \
+ * Send the lead an electronic mail
+ \-------------------------------------- */
+$mailer = new Mailer();
+$mailer->setFrom( 'tours@immersionindia.com', 'ImmersionIndia' );
+$mailer->addRecipient( $emailAddress );
+$mailer->setSubject( 'Thank you for your enquiry.' );
+
+	// Build the full host domain URL
+if ( HTTPS_SUPPORT )
+	$httpProtocol = 'https';
+else
+	$httpProtocol = 'http';
+$hostName = $_SERVER[ 'HTTP_HOST' ] ?: $_SERVER[ 'SERVER_NAME' ];
+$mailData = [
+	'hostDomainURL' => $httpProtocol . '://' . $hostName,
+	'name' => $nameOfPerson,
+	'emailAddress' => $emailAddress,
+	'phoneNumber' => $phoneNumber,
+	'institution' => $institution,
+	'programId' => $programId,
+	'program' => $program,
+	'date' => $date
+];
+$mailer->setBody( __DIR__ . '/../../pages/enquiry-mail.php', $mailData );
+try {
+	$mailer->send();
+}
+catch ( \Exception $e ) {
+	echo json_encode( [
+		'code' => 500,
+		'message' => 'The mail could not be sent.',
+		'data' => $e->getMessage()
+	] );
+}
 
 
 

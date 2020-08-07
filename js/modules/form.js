@@ -96,8 +96,15 @@ var enquiryForm = new BFSForm( "js_enquiry_form" );
 	var domInputEmail = document.getElementById( "js_form_input_email" );
 	var domInputPhoneNumber = document.getElementById( "js_form_input_phone" );
 	var domInputInstitution = document.getElementById( "js_form_input_institution" );
+	var domInputProgramId = document.getElementById( "js_form_input_program_id" );
 	var domInputProgram = document.getElementById( "js_form_input_program" );
 	var domInputDate = document.getElementById( "js_form_input_date" );
+
+// Synchronise the program id with the selected program
+$( domInputProgram ).on( "change", function ( event ) {
+	var programId = $( event.target ).closest( "select" ).find( ":selected" ).attr( "id" );
+	domInputProgramId.value = programId;
+} );
 
 // Set up the enquiry form's input fields, data validators and data assemblers
 	// Name
@@ -151,6 +158,12 @@ enquiryForm.addField( "institution", false, domInputInstitution, function ( valu
 			throw new Error( "Please provide a college or university." );
 
 	return institution;
+} );
+
+	// Study Program Id
+enquiryForm.addField( "programId", false, domInputProgramId, function ( values ) {
+	var programId = values[ 0 ].trim();
+	return programId;
 } );
 
 	// Study Program
