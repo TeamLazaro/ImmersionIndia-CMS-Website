@@ -255,7 +255,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Quote Section -->
 
 <!-- Programs Section -->
-<section class="programs-section space-100-top-bottom fill-neutral-1" data-section-title="Programs Section" data-section-slug="programs-section">
+<section class="programs-section space-100-top-bottom fill-neutral-1" id="section-study-programs" data-section-title="Programs Section" data-section-slug="programs-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -492,7 +492,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Booking Section -->
 
 <!-- Team Section -->
-<section class="team-section space-100-top-bottom fill-dark" data-section-title="Team Section" data-section-slug="team-section">
+<section class="team-section space-100-top-bottom fill-dark" id="section-team" data-section-title="Team Section" data-section-slug="team-section">
 	<div class="row space-50-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
