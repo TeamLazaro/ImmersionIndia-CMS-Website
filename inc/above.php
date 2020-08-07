@@ -58,6 +58,10 @@ $metaDescription = $metaDescription ?? getContent( null, 'meta_description' );
 $metaImage = $metaImage ?? getContent( [ ], 'meta_image' );
 $metaImage = $metaImage[ 'sizes' ][ 'medium' ] ?? $metaImage[ 'sizes' ][ 'small' ] ?? $metaImage[ 'sizes' ][ 'thumbnail' ] ?? $metaImage[ 'url' ] ?? null;
 
+/*
+ * ----- Navigation
+ */
+$navigationMenuItems = getNavigationMenu( 'Main' );
 
 // #fornow
 // Just so that when some social media service (WhatsApp) try to ping URL,

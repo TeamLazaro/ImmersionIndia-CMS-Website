@@ -14,13 +14,9 @@
 								<div class="content columns small-12 large-10">
 									<div class="links row">
 										<div class="columns small-12 medium-6">
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">Home</span></a></div>
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">Why Us</span></a></div>
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">Study Programs</span></a></div>
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">Faqs</span></a></div>
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">Team</span></a></div>
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">Enquire Now</span></a></div>
-											<div class="p w-500 space-min-bottom"><a href="" tabindex="-1" class="link line-height-small"><span class="l">COVID-19</span></a></div>
+											<?php foreach ( $navigationMenuItems as $item ) : ?>
+												<div class="p w-500 space-min-bottom <?= $item[ 'classes' ] ?>"><a href="<?= $item[ 'url' ] ?>" tabindex="-1" class="link line-height-small"><span class="l"><?= $item[ 'label' ] ?></span></a></div>
+											<?php endforeach; ?>
 										</div>
 										<div class="columns small-12 medium-6 xlarge-5">
 											<div class="p space-min-bottom"><a target="_blank" href="tel:+919591658632" tabindex="-1" class="link line-height-small" style="line-height: .85"><img class="icon" src="./media/icon/icon-phone.svg<?= $ver ?>"><span class="inline-top"><span class="l">+91 95916 58632</span><br><span class="small opacity-50">Also on WhatsApp & FaceTime.</span></span></a></div>
