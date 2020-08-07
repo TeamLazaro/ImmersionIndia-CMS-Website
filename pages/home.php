@@ -105,7 +105,7 @@ foreach ( $memberObjects as $memberObject ) {
 	$members[ ] = [
 		'name' => $memberObject[ 'post_title' ],
 		'designation' => getContent( '', 'designation', $memberObject[ 'ID' ] ),
-		'image' => getContent( '', 'image -> sizes -> small', $memberObject[ 'ID' ] ),
+		'image' => getContent( $thumbnailFallbackImage, 'image -> sizes -> small', $memberObject[ 'ID' ] ),
 		'filter_black_white' => getContent( '', 'filter_black_white', $memberObject[ 'ID' ] )
 	];
 }
