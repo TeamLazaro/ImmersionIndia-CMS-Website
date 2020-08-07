@@ -329,7 +329,7 @@ foreach ( $memberObjects as $memberObject ) {
 				<div class="article-filter space-25-bottom">
 					<div class="feedback p text-neutral-4 opacity-50 space-min-bottom">
 						<img class="inline-middle" width="16" src="../media/icon/icon-filter-dark.svg<?= $ver ?>">
-						<span class="inline-middle">Select to Filter by Type of Articles</span>
+						<span class="inline-middle js_post_filter_status_message" data-text-initial="Select to Filter by Type of Articles"></span>
 					</div>
 					<div class="toggle">
 						<?php foreach ( $postCategories as $category ) : ?>
