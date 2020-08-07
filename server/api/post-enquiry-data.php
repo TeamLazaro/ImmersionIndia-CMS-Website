@@ -69,9 +69,11 @@ if ( empty( $input[ 'name' ] ) or empty( $input[ 'emailAddress' ] ) ) {
 // /* ------------------------------------- \
 //  * Pull in the dependencies
 //  \-------------------------------------- */
-// require_once __DIR__ . '/../../inc/datetime.php';
+require_once __DIR__ . '/../../conf.php';
+require_once __DIR__ . '/../../inc/utils.php';
 require_once __DIR__ . '/../google-forms.php';
 require_once __DIR__ . '/../mailer.php';
+
 
 
 
@@ -87,6 +89,31 @@ $institution = $input[ 'institution' ] ?? '';
 $programId = (int) ( $input[ 'programId' ] ?? '' );
 $program = $input[ 'program' ] ?? '';
 $date = $input[ 'date' ] ?? '';
+
+
+
+/* ------------------------------------- \
+ * Add Enquiry record to the database
+ \-------------------------------------- */
+if ( CMS_ENABLED )
+	initWordPress();
+
+# Create the post
+$enquiryId = wp_insert_post( [
+	'post_type' => 'enquiries',
+	'post_title' => wp_strip_all_tags( $nameOfPerson ),
+	'post_content' => '',
+	'post_author' => 1,
+	'post_status' => 'publish'
+] );
+
+# Now, set the individual fields
+update_field( 'email', $emailAddress, $enquiryId );
+update_field( 'phone', $phoneNumber, $enquiryId );
+update_field( 'institute', $institution, $enquiryId );
+update_field( 'program', $program, $enquiryId );
+update_field( 'for', $date, $enquiryId );
+update_field( 'status', 'Pending', $enquiryId );
 
 
 
