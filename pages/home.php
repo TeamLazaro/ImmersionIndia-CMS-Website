@@ -450,7 +450,7 @@ foreach ( $memberObjects as $memberObject ) {
 									<select class="block" id="js_form_input_program">
 										<option value="" disabled selected>-- Select Program --</option>
 										<?php foreach ( $programs as $program ) : ?>
-											<option id="<?= $program[ 'id' ] ?>" value="[ <?= $program[ 'subject' ] ?> ] <?= $program[ 'title' ] ?>"><?= $program[ 'title' ] ?></option>
+											<option id="<?= $program[ 'id' ] ?>" value="<?= $program[ 'type' ] ?>: <?= $program[ 'subject' ] ?>"><?= $program[ 'type' ] ?>: <?= $program[ 'subject' ] ?> [ <?= $program[ 'title' ] ?> ]</option>
 										<?php endforeach; ?>
 									</select>
 								</label>
