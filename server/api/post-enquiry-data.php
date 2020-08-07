@@ -76,27 +76,32 @@ require_once __DIR__ . '/../google-forms.php';
 
 
 /* ------------------------------------- \
- * Ingest the data onto the Spreadsheet
+ * Interpret the data
  \-------------------------------------- */
-# Interpret the data
 // $when = CFD\DateTime::getSpreadsheetDateFromISO8601( $input[ 'when' ] );
-$name = $input[ 'name' ];
+$nameOfPerson = $input[ 'name' ];
 $emailAddress = $input[ 'emailAddress' ];
 $phoneNumber = $input[ 'phoneNumber' ] ?? '';
 $institution = $input[ 'institution' ] ?? '';
 $program = $input[ 'program' ] ?? '';
 $date = $input[ 'date' ] ?? '';
 
-# Shape the data
+
+
+/* ------------------------------------- \
+ * Ingest the data onto the Spreadsheet
+ \-------------------------------------- */
 $data = [
 	// 'when' => $when,
-	'name' => $name,
+	'name' => $nameOfPerson,
 	'emailAddress' => $emailAddress,
 	'phoneNumber' => $phoneNumber,
 	'institution' => $institution,
 	'program' => $program,
 	'date' => $date
 ];
+
+// Submit data to the spreadsheet
 GoogleForms\submitEnquiry( $data );
 
 
