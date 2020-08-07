@@ -63,7 +63,7 @@ foreach ( $programPosts as $program ) {
 		'bgColor' => $bgColor,
 		'image' => getContent( null, 'image -> sizes -> small', $program[ 'ID' ] ),
 		'description' => getContent( '', 'description', $program[ 'ID' ] ),
-		'attachment' => getContent( '', 'details_pdf', $program[ 'ID' ] )[ 'url' ]
+		'attachment' => getContent( '', 'details_pdf -> url', $program[ 'ID' ] )
 	];
 }
 
