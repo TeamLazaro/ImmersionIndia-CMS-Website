@@ -8,6 +8,11 @@ $featuredImageStyle = '';
 
 if( !empty($featuredImageHeight) )
 	$featuredImageStyle = 'padding-top: calc( '. $featuredImageHeight . '% - 60px ) !important;';
+
+
+$featuredImageFallback = getContent( '', 'post_featured_fallback_image -> sizes -> medium' );
+$featuredImage = get_the_post_thumbnail_url( $thePost[ 'ID' ] ) ?: $featuredImageFallback;
+
 ?>
 
 
@@ -15,7 +20,7 @@ if( !empty($featuredImageHeight) )
 <!-- Landing Section -->
 <section class="landing-section fill-dark js_sticky_marker" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-image-bg">
-		<div class="image" style="background-image: url( '<?= get_the_post_thumbnail_url($thePost['ID']) ?: 'https://via.placeholder.com/1500' ?>' );"></div>
+		<div class="image" style="background-image: url( '<?= $featuredImage ?>' );"></div>
 	</div>
 	<div class="landing-content" style="<?= $featuredImageStyle ?>">
 		<div class="container">
