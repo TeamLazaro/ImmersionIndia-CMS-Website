@@ -327,7 +327,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Programs Section -->
 
 <!-- Articles Section -->
-<section class="articles-section space-100-top-bottom fill-neutral-2" data-section-title="Articles Section" data-section-slug="articles-section">
+<section class="articles-section space-100-top-bottom fill-neutral-2" id="section-articles" data-section-title="Articles Section" data-section-slug="articles-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
