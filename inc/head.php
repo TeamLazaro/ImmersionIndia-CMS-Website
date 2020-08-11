@@ -129,23 +129,16 @@
 
 	<!--
 	*
-	*	Fonts and Icons
 	*
 	- -->
-	<?php echo getContent( <<<ARB
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/grd7uoj.css">
+
+
+	<?= getContent( <<<ARB
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/grd7uoj.css">
 ARB
-, 'fonts_and_icons' ) ?>
-
-
-	<?php
-		/*
-		 * Arbitrary Code ( Bottom of Head )
-		 */
-		echo getContent( '', 'arbitrary_code_head_bottom' );
-	?>
+, 'arbitrary_code -> before_head_closing' ); ?>
 
 
 </head>
