@@ -1,4 +1,6 @@
 
+window.__BFS = window.__BFS || { };
+
 /*
  *
  * Wait for the specified number of seconds.
@@ -106,3 +108,17 @@ function executeEvery ( interval, fn ) {
 	}
 
 }
+
+
+
+/*
+ *
+ * Add given data to the data layer variable established by GTM
+ *
+ */
+function gtmPushToDataLayer ( data ) {
+	if ( ! window.dataLayer )
+		return;
+	window.dataLayer.push( data );
+}
+window.__BFS.gtmPushToDataLayer = gtmPushToDataLayer;
