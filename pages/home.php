@@ -97,6 +97,15 @@ $postCategories = array_keys( $postCategories );
 
 
 /*
+ * ----- Brochures
+ */
+$brochures = [
+	'sample_virtual' => getContent( '#', 'sample_brochure_virtual' ),
+	'sample_travel' => getContent( '#', 'sample_brochure_travel' )
+];
+
+
+/*
  * ----- Members
  */
 $members = [ ];
@@ -380,13 +389,13 @@ foreach ( $memberObjects as $memberObject ) {
 						<div class="h5 space-min-bottom">Download our <span class="text-teal">Virtual Series Brochure</span></div>
 						<div class="p"><span class="strong text-teal">— &nbsp;</span> 12 Compact Virtual Courses</div>
 						<div class="p space-25-bottom"><span class="strong text-teal">— &nbsp;</span> Course Summaries</div>
-						<a href="" class="button fill-teal">Download Now <i class="material-icons">get_app</i></a>
+						<a href="<?= $brochures[ 'sample_virtual' ] ?>" target="_blank" class="button fill-teal">Download Now <i class="material-icons">get_app</i></a>
 					</div>
 					<div class="columns small-12 medium-6 large-5">
 						<div class="h5 space-min-bottom">Download a <span class="text-pink">Sample Travel Schedule</span></div>
 						<div class="p"><span class="strong text-pink">— &nbsp;</span> 12 to 15 day Immersive Travel</div>
 						<div class="p space-25-bottom"><span class="strong text-pink">— &nbsp;</span> Customized Itineraries</div>
-						<a href="" class="button fill-pink">Download Now <i class="material-icons">get_app</i></a>
+						<a href="<?= $brochures[ 'sample_travel' ] ?>" target="_blank" class="button fill-pink">Download Now <i class="material-icons">get_app</i></a>
 					</div>
 				</div>
 			</div>
