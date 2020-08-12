@@ -5,6 +5,32 @@
 .post-section {}
 
 
+/* -- Post Share -- */
+.post-section .share-url {
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.post-section .share-url .share-url-label {
+    font-weight: 400;
+    background-image: -webkit-linear-gradient(left, var(--orange) 0%, var(--pink) 50%, transparent 50%);
+	background-color: var(--dark);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: background .4s .2s;
+    -webkit-background-clip: text;
+}
+
+.post-section .share-url:hover .share-url-label {
+	color: var(--orange);
+	background-position: 0 0;
+    color: transparent;
+    transition: .5s 0;
+}
+
+
+
 /*
  *	Typography
  */

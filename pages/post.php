@@ -48,6 +48,14 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div>
 					<?= $postContent ?: 'Um, what happened to the content?' ?>
+					<!-- Share -->
+					<div class="block share-url js_share_url_widget">
+						<span class="share-url-title p text-uppercase inline text-orange js_share_url_title">Share</span>
+						<i class="icon material-icons inline-bottom text-orange">link</i>
+						<a class="share-url-label h5 inline js_share_url" href="/?view=university-of-central-oklahoma-june-2017#tours" target="_blank">immersionindia.com/?view=university-of-central-oklahoma-june-2017#tours</a>
+						<textarea class="visuallyhidden js_share_url_text">immersionindia.com/?view=university-of-central-oklahoma-june-2017#tours</textarea>
+					</div>
+					<!-- END: Share -->
 				</div>
 			</div>
 		</div>
