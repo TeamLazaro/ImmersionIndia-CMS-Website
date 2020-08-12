@@ -88,6 +88,7 @@
 	width: 100%;
 	height: auto;
 	color: var(--light);
+	text-shadow: 1px 1px 5px #000;
 }
 
 @media( min-width: 640px )  {}
