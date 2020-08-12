@@ -103,7 +103,7 @@
 	<meta property="og:url" content="<?php echo $pageUrl ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?php echo $pageTitle ?>">
-	<meta property="og:image" content="<?php echo $pageImage ?: '' ?>">
+	<meta property="og:image" content="<?php echo $metaImage ?: '' ?>">
 	<meta property="og:description" content="<?php echo getContent( '', 'og -> description' ) ?>">
 	<meta property="og:site_name" content="<?php echo getContent( '', 'site_title' ) ?>">
 

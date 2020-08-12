@@ -45,9 +45,6 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 <section class="post-section space-50-top-bottom" style="min-height: 50vh;">
 	<div class="container">
 		<div class="row">
-			<!-- Social Image -->
-			<div class="visuallyhidden"><img src="<?= $socialImage ?>"></div>
-			<!-- END: Social Image -->
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div>
 					<?= $postContent ?: 'Um, what happened to the content?' ?>
