@@ -174,11 +174,11 @@ foreach ( $memberObjects as $memberObject ) {
 					</div>
 					<div class="columns small-12 large-5 space-25-left">
 						<div class="space-25-bottom">
-							<div class="h4 strong space-25-bottom">90 minute Live Virtual Sessions</div>
-							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Business Case Studies</div>
+							<div class="h4 strong space-25-bottom">Live Virtual Sessions</div>
 							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Business Leader Profiles</div>
+							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Case Studies</div>
 							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Problem Solving Workshops</div>
-							<div class="h5"><span class="strong text-teal">— &nbsp;</span> End with a Q&A Session</div>
+							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Discussion Groups</div>
 							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Customizable on Request</div>
 						</div>
 						<button class="fill-teal">Register Now</button>
@@ -199,7 +199,7 @@ foreach ( $memberObjects as $memberObject ) {
 					<div class="row">
 						<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-pink"></span></div>
 						<div class="columns small-12 medium-9 large-6 xlarge-5">
-							<div class="p text-neutral-4">What you want is what you get! You could begin your journey at a start-up company in an Urban Metropolis and maybe wind up in a Wildlife Sanctuary – with us, anything’s possible! Our programs are designed to pack a wide variety of experiences into a 10-15 day schedule</div>
+							<div class="p text-neutral-4">What you want is what you get! You could begin your journey at a start-up company in an Urban Metropolis and maybe wind up in a Wildlife Sanctuary – with us, anything’s possible! Our programs are designed to pack a wide variety of experiences.</div>
 						</div>
 					</div>
 				</div>
@@ -275,9 +275,9 @@ foreach ( $memberObjects as $memberObject ) {
 					<div class="underline columns small-4 medium-3 large-2 space-min-bottom"><span class="fill-pink"></span></div>
 					<div class="columns small-12 medium-9 large-7 xlarge-6">
 						<div class="h4 text-pink">Travel Based</div>
-						<div class="p text-neutral-4 space-min-bottom">12 to 15 day immersive travel study programs to India. <br>Customized itineraries with turn-key logistics.</div>
+						<div class="p text-neutral-4 space-min-bottom">Immersive travel study programs to India. <br>Customized itineraries with turn-key logistics.</div>
 						<div class="h4 text-teal">Virtual Series</div>
-						<div class="p text-neutral-4">90 minute, live video programs that include a Q&A session.</div>
+						<div class="p text-neutral-4">Live virtual sessions that include active discussions.</div>
 
 						<div class="program-filter space-25-top-bottom">
 							<div class="feedback p text-neutral-4 opacity-50 space-min-bottom">
@@ -482,13 +482,13 @@ foreach ( $memberObjects as $memberObject ) {
 						</form>
 						<!-- END: Form -->
 						<div class="email-action">
-							<a href="mailto:vineeth@immersionindia.com" target="_blank" class="block fill-neutral-2 space-50" tabindex="-1">
+							<a href="mailto:experiences@immersionindia.com" target="_blank" class="block fill-neutral-2 space-50" tabindex="-1">
 								<div class="icon inline-bottom space-25-right">
 									<img class="block" src="../media/icon/icon-email-color.svg<?= $ver ?>">
 								</div>
 								<div class="inline-bottom">
 									<div class="h5 text-neutral-4">or, drop us an email at…</div>
-									<div class="email-id h3 strong text-pink w-400" style="letter-spacing: 0.05rem;"><span class="text-underline">vineeth</span><span class="w-500">@</span>immersionindia.com</div>
+									<div class="email-id h3 strong text-pink w-400" style="letter-spacing: 0.05rem;"><span class="text-underline">experiences</span><span class="w-500">@</span>immersionindia.com</div>
 								</div>
 							</a>
 						</div>
