@@ -13,6 +13,8 @@ if( !empty($featuredImageHeight) )
 $featuredImageFallback = getContent( '', 'post_featured_fallback_image -> sizes -> medium' );
 $featuredImage = get_the_post_thumbnail_url( $thePost[ 'ID' ] ) ?: $featuredImageFallback;
 
+$postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $thePost[ 'post_content' ] ) );
+
 ?>
 
 
@@ -43,7 +45,7 @@ $featuredImage = get_the_post_thumbnail_url( $thePost[ 'ID' ] ) ?: $featuredImag
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div>
-					<?= $thePost[ 'post_content' ] ?: 'Um, what happened to the content?' ?>
+					<?= $postContent ?: 'Um, what happened to the content?' ?>
 				</div>
 			</div>
 		</div>

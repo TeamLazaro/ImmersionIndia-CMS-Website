@@ -95,7 +95,6 @@
 
 
 			$('.blocks-gallery-grid').slick({
-				autoplay: true,
 				arrows: true,
 				dots: false,
 				infinite: true,
@@ -103,8 +102,9 @@
 				autoplaySpeed: 3000,
 				slidesToShow: 1,
 				centerMode: true,
-				variableWidth: true
-			});
+				variableWidth: true,
+				lazyLoad: 'ondemand'
+			}).slickNext();
 
 
 		} );
