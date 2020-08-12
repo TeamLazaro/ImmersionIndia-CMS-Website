@@ -13,6 +13,8 @@ if( !empty($featuredImageHeight) )
 $featuredImageFallback = getContent( '', 'post_featured_fallback_image -> sizes -> medium' );
 $featuredImage = get_the_post_thumbnail_url( $thePost[ 'ID' ] ) ?: $featuredImageFallback;
 
+$socialImage = getContent( '', 'social_image -> sizes -> medium' );
+
 $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $thePost[ 'post_content' ] ) );
 
 ?>
@@ -43,6 +45,9 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 <section class="post-section space-50-top-bottom" style="min-height: 50vh;">
 	<div class="container">
 		<div class="row">
+			<!-- Social Image -->
+			<div class="visuallyhidden"><img src="<?= $socialImage ?>"></div>
+			<!-- END: Social Image -->
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<div>
 					<?= $postContent ?: 'Um, what happened to the content?' ?>
