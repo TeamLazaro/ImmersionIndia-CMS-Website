@@ -11,4 +11,7 @@
 # the download directory
 /download
 
+# For the Query Monitor plugin
+/cms/wp-content/db.php
+
 # Don't ignore /favicon and /media. Since it's just interface and it's small enough to be part of git repo.
