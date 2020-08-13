@@ -65,6 +65,7 @@
 	<script type="text/javascript" src="/js/modules/modal_box.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/navigation.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/video_embed.js<?php echo $ver ?>"></script>
+	<script type="text/javascript" src="/plugins/cd-headline/js/main.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/carousel.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/form.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/disclaimer.js<?php echo $ver ?>"></script>

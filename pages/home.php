@@ -142,6 +142,26 @@ foreach ( $memberObjects as $memberObject ) {
 		<div class="container">
 			<div class="row">
 				<div class="columns small-12">
+					<div class="headline h4 cd-headline slide">
+						<span>&nbsp; Come experience our</span>
+						<span class="cd-words-wrapper">
+							<b class="is-visible">people.</b>
+							<b>language.</b>
+							<b>industry.</b>
+							<b>science.</b>
+							<b>economy.</b>
+							<b>business.</b>
+							<b>history.</b>
+							<b>villages.</b>
+							<b>cities.</b>
+							<b>food.</b>
+							<b>transport.</b>
+							<b>culture.</b>
+							<b>politics.</b>
+							<b>education.</b>
+							<b>nature.</b>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
