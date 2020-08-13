@@ -22,9 +22,9 @@
 	- -->
 	<!-- Short description of the document (limit to 150 characters) -->
 	<!-- This content *may* be used as a part of search engine results. -->
-	<meta name="description" content="<?php echo getContent( '', 'description' ); ?>">
-	<!-- Short description of your document's subject -->
-	<meta name="subject" content="<?php echo getContent( '', 'subject' ); ?>">
+	<?php if ( $metaDescription ) : ?>
+	<meta name="description" content="<?= htmlentities( strip_tags( $metaDescription ) ) ?>">
+	<?php endif; ?>
 
 
 	<!--
@@ -103,15 +103,19 @@
 	<meta property="og:url" content="<?php echo $pageUrl ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?php echo $pageTitle ?>">
-	<meta property="og:image" content="<?php echo $metaImage ?: '' ?>">
-	<meta property="og:description" content="<?php echo getContent( '', 'og -> description' ) ?>">
+	<?php if ( $metaImage ) : ?>
+	<meta property="og:image" content="<?= $metaImage ?>">
+	<?php endif; ?>
+	<?php if ( $metaDescription ) : ?>
+	<meta property="og:description" content="<?= htmlentities( strip_tags( $metaDescription ) ) ?>">
+	<?php endif; ?>
 	<meta property="og:site_name" content="<?php echo getContent( '', 'site_title' ) ?>">
 
 
 	<!-- Schema.org / Google+ -->
 	<meta itemprop="name" content="<?php echo $pageTitle ?>">
 	<meta itemprop="description" content="<?php echo getContent( 'This is a website', 'schema -> description' ) ?>">
-	<meta itemprop="image" content="<?php echo $pageImage ?: '' ?>">
+	<meta itemprop="image" content="<?php echo $metaImage ?: '' ?>">
 
 
 	<!--
