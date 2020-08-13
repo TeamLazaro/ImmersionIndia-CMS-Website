@@ -4,7 +4,7 @@
 			<!-- ~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/ -->
 			
 			<!-- Footer Section -->
-			<section class="footer-section space-100-top-bottom fill-black" data-section-title="Footer Section" data-section-slug="footer-section">
+			<section class="footer-section space-100-top-bottom fill-black" id="footer-section" data-section-title="Footer Section" data-section-slug="footer-section">
 				<div class="container">
 					<div class="row">
 						<div class="columns small-12 medium-10 medium-offset-1">

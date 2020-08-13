@@ -127,7 +127,7 @@ foreach ( $memberObjects as $memberObject ) {
 
 
 <!-- Landing Section -->
-<section class="landing-section fill-dark js_sticky_marker" data-section-title="Landing Section" data-section-slug="landing-section">
+<section class="landing-section fill-dark js_sticky_marker" id="landing-section" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-video-bg">
 		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="uYX4uDXS3Kw" data-loop="true" data-autoplay="true" style="padding-top: 51.85%;">
 			<div class="video-embed-placeholder" style="background-image: url( <?= $heroVideoFallbackImage ?> );"></div>
@@ -144,7 +144,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Landing Section -->
 
 <!-- Intro Section -->
-<section class="intro-section fill-neutral-1 space-100-top-bottom" data-section-title="Intro Section" data-section-slug="intro-section">
+<section class="intro-section fill-neutral-1 space-100-top-bottom" id="intro-section" data-section-title="Intro Section" data-section-slug="intro-section">
 	<div class="row space-50-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8">
@@ -243,7 +243,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Intro Section -->
 
 <!-- Gallery Section -->
-<section class="gallery-section" data-section-title="Gallery Section" data-section-slug="gallery-section">
+<section class="gallery-section" id="gallery-section" data-section-title="Gallery Section" data-section-slug="gallery-section">
 	<div class="slide-gallery block">
 		<?php foreach ( $slideGallery as $slide ) : ?>
 			<div class="slide">
@@ -266,7 +266,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Gallery Section -->
 
 <!-- Quote Section -->
-<section class="quote-section space-100-top-bottom fill-pink" data-section-title="Quote Section Travel" data-section-slug="quote-section-travel">
+<section class="quote-section space-100-top-bottom fill-pink" id="quote-section-travel" data-section-title="Quote Section Travel" data-section-slug="quote-section-travel">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">
@@ -390,7 +390,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Articles Section -->
 
 <!-- Brochure Section -->
-<section class="brochure-section space-100-top-bottom fill-dark" data-section-title="Brochure Section" data-section-slug="brochure-section">
+<section class="brochure-section space-100-top-bottom fill-dark" id="brochure-section" data-section-title="Brochure Section" data-section-slug="brochure-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -420,7 +420,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Brochure Section -->
 
 <!-- Quote Section -->
-<section class="quote-section space-100-top-bottom fill-teal" data-section-title="Quote Section Virtual" data-section-slug="quote-section-virtual">
+<section class="quote-section space-100-top-bottom fill-teal" id="quote-section-virtual" data-section-title="Quote Section Virtual" data-section-slug="quote-section-virtual">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-2">

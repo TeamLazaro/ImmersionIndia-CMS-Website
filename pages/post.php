@@ -22,7 +22,7 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 
 
 <!-- Landing Section -->
-<section class="landing-section fill-dark js_sticky_marker" data-section-title="Landing Section" data-section-slug="landing-section">
+<section class="landing-section fill-dark js_sticky_marker" id="landing-section" data-section-title="Landing Section" data-section-slug="landing-section">
 	<div class="landing-image-bg">
 		<div class="image" style="background-image: url( '<?= $featuredImage ?>' );"></div>
 	</div>
@@ -42,7 +42,7 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 <!-- END: Landing Section -->
 
 <!-- Post Section -->
-<section class="post-section space-50-top-bottom" style="min-height: 50vh;">
+<section class="post-section space-50-top-bottom" id="post-content-section" style="min-height: 50vh;">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
