@@ -6,6 +6,10 @@
 	position: relative;
 }
 
+.intro-section .headline b {
+	font-weight: 700;
+}
+
 .intro-section .new {
 	box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.05), inset 0 0 var(--space-min) 2px rgba(0,0,0,0.05);
 }

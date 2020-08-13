@@ -139,32 +139,6 @@ foreach ( $memberObjects as $memberObject ) {
 			<img class="inline-middle" width="64" src="../media/icon/icon-play-video.svg<?= $ver ?>">
 			<div class="h5 w-500 text-light text-uppercase space-min-top">Watch Me First</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="columns small-12">
-					<div class="headline h4 cd-headline slide">
-						<span>&nbsp; Come experience our</span>
-						<span class="cd-words-wrapper">
-							<b class="is-visible">people.</b>
-							<b>language.</b>
-							<b>industry.</b>
-							<b>science.</b>
-							<b>economy.</b>
-							<b>business.</b>
-							<b>history.</b>
-							<b>villages.</b>
-							<b>cities.</b>
-							<b>food.</b>
-							<b>transport.</b>
-							<b>culture.</b>
-							<b>politics.</b>
-							<b>education.</b>
-							<b>nature.</b>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </section>
 <!-- END: Landing Section -->
@@ -174,8 +148,28 @@ foreach ( $memberObjects as $memberObject ) {
 	<div class="row space-50-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8">
-				<div class="h4 line-height-medium">
+				<div class="h4 line-height-medium space-25-bottom">
 					We guide students, corporate executives, faculty and professionals on <span class="strong"><span class="no-wrap">study-centric</span>, experiential learning programs in urban and rural India.</span>
+				</div>
+				<div class="headline h4 cd-headline slide">
+					<span>Come experience our</span>
+					<span class="cd-words-wrapper">
+						<b class="is-visible">people.</b>
+						<b>language.</b>
+						<b>industry.</b>
+						<b>science.</b>
+						<b>economy.</b>
+						<b>business.</b>
+						<b>history.</b>
+						<b>villages.</b>
+						<b>cities.</b>
+						<b>food.</b>
+						<b>transport.</b>
+						<b>culture.</b>
+						<b>politics.</b>
+						<b>education.</b>
+						<b>nature.</b>
+					</span>
 				</div>
 			</div>
 		</div>
