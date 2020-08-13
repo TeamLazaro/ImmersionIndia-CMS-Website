@@ -16,7 +16,7 @@ $homePage = $documentRoot . '/pages/home.php';
 $requestPath = trim(
 	strstr( $_SERVER[ 'REQUEST_URI' ], '?', true ) ?: $_SERVER[ 'REQUEST_URI' ],
 	'/'
-) ?: 'home';
+) ?: '';
 $postType = null;
 $urlSlug = '';
 // Does this route have a dedicated template?
@@ -30,7 +30,7 @@ $hasDedicatedTemplate = false;
  * -/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
  */
 // Home page
-if ( $requestPath === 'home' ) {
+if ( $requestPath === '' ) {
 	$hasDedicatedTemplate = true;
 	$urlSlug = 'home';
 	$_GET[ '_slug' ] = 'home';
