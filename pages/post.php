@@ -52,8 +52,8 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 					<div class="block share-url js_share_url_widget">
 						<span class="share-url-title p text-uppercase inline text-orange js_share_url_title">Share</span>
 						<i class="icon material-icons inline-bottom text-orange">link</i>
-						<a class="share-url-label h5 inline js_share_url" href="/?view=university-of-central-oklahoma-june-2017#tours" target="_blank">immersionindia.com/?view=university-of-central-oklahoma-june-2017#tours</a>
-						<textarea class="visuallyhidden js_share_url_text">immersionindia.com/?view=university-of-central-oklahoma-june-2017#tours</textarea>
+						<a class="share-url-label h5 inline js_share_url" href="http://localhost/corporate-education-experiences" target="_blank"><?= $pageUrl ?></a>
+						<textarea class="visuallyhidden js_share_url_text"><?= $pageUrl ?></textarea>
 					</div>
 					<!-- END: Share -->
 				</div>
@@ -65,5 +65,38 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 
 
 
+
+<script type="text/javascript">
+
+	/*
+	 *
+	 * Share URLs
+	 *
+	 * When the share button or the URL is clicked/tapped
+	 * We copy the URL to the clipboard
+	 *
+	 */
+	$( document ).on( "click", ".js_share_url", function ( event ) {
+		event.preventDefault();
+	} );
+	$( document ).on( "click", ".js_share_url_widget", function ( event ) {
+
+		event.preventDefault();
+
+		var $shareURLWidget = $( event.target ).closest( ".js_share_url_widget" );
+		var $feedbackMessage = $shareURLWidget.find( ".js_share_url_title" );
+
+		var $url = $shareURLWidget.find( ".js_share_url_text" );
+		$url.get( 0 ).select();
+		try {
+			document.execCommand( "copy" );
+			$feedbackMessage.text( "Copied to Clipboard" );
+		}
+		catch ( e ) {}
+		$url.get( 0 ).blur();
+
+	} );
+
+</script>
 
 <?php require_once __DIR__ . '/../inc/below.php'; ?>
