@@ -195,7 +195,7 @@ foreach ( $memberObjects as $memberObject ) {
 							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Discussion Groups</div>
 							<div class="h5"><span class="strong text-teal">— &nbsp;</span> Customizable on Request</div>
 						</div>
-						<button class="fill-teal">Register Now</button>
+						<a href="#programs-section" class="button fill-teal">Register Now</a>
 					</div>
 				</div>
 			</div>
@@ -278,7 +278,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Quote Section -->
 
 <!-- Programs Section -->
-<section class="programs-section space-100-top-bottom fill-neutral-1" id="section-study-programs" data-section-title="Programs Section" data-section-slug="programs-section">
+<section class="programs-section space-100-top-bottom fill-neutral-1" id="programs-section" data-section-title="Programs Section" data-section-slug="programs-section">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1">
@@ -374,7 +374,7 @@ foreach ( $memberObjects as $memberObject ) {
 						<div class="tag small text-uppercase"><?= $post[ 'category' ] ?></div>
 					</div>
 					<div class="description space-min-top-bottom">
-						<div class="title h5 text-teal strong space-min-bottom"><?= $post[ 'title' ] ?></div>
+						<a href="<?= $post[ 'slug' ] ?>" class="title h5 text-teal strong space-min-bottom"><?= $post[ 'title' ] ?></a>
 						<div class="excerpt p"><?= $post[ 'excerpt' ] ?></div>
 					</div>
 					<a href="<?= $post[ 'slug' ] ?>" class="button block fill-teal">Read The Full Article</a>
