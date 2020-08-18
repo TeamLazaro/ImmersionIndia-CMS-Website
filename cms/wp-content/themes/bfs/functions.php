@@ -38,6 +38,23 @@ function bfs_theme_setup () {
 	add_image_size( 'small', 400, 400, false );
 
 
+
+	/*
+	 *
+	 * Block settings
+	 *
+	 */
+	add_action( 'enqueue_block_editor_assets', function () {
+		wp_enqueue_script(
+			'bfs-guten-script',
+			get_template_directory_uri() . '/js/blocks.js',
+			[ 'wp-dom-ready', 'wp-blocks', 'wp-edit-post' ],
+			filemtime( __DIR__ . '/js/blocks.js' )
+		);
+	} );
+
+
+
 	/*
 	 *
 	 * Show the Meta-data page if it exists
