@@ -28,7 +28,7 @@
 
 .landing-section .landing-video-bg + .landing-content .play-video {
 	position: absolute;
-	top: 50%;
+	top: calc( 50% + var(--space-50) );
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -71,10 +71,18 @@
 	.landing-section .landing-image-bg + .landing-content {
 		padding-top: 140px;
 	}
+
+	.landing-section .landing-video-bg + .landing-content .play-video {
+		top: calc( 50% + var(--space-75) );
+	}
 }
 @media( min-width: 1040px ) {
 	.landing-section .landing-image-bg + .landing-content {
 		padding-top: 180px;
+	}
+
+	.landing-section .landing-video-bg + .landing-content .play-video {
+		top: calc( 50% + var(--space-50) );
 	}
 }
 @media( min-width: 1480px ) {

@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="columns small-12 medium-10 medium-offset-1">
 				<a href="/" class="logo">
-					<img src="../media/logo-immersion-light.svg<?= $ver ?>">
+					<img src="../media/logo-immersion-light-banner.svg<?= $ver ?>">
 				</a>
 			</div>
 		</div>
