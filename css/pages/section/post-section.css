@@ -5,9 +5,17 @@
 .post-section {}
 
 
+/* -- Post Image/Youtube Embed -- */
+
+.post-section figure {
+	margin: 0; 
+}
+
+
+
 /* -- Post Share -- */
 .post-section .share-url {
-	margin-top: 20px;
+	margin-bottom: 20px;
 	cursor: pointer;
 }
 
