@@ -201,7 +201,7 @@ foreach ( $memberObjects as $memberObject ) {
 			</div>
 		</div>
 	</div>
-	<div class="row space-50-top">
+	<div class="row space-50-top" id="intro-section-travel">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8">
 				<div class="h2 text-pink space-min-bottom">Travel. Experience. Learn. Repeat.</div>
