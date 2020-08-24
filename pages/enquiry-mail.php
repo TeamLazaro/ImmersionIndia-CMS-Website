@@ -16,16 +16,15 @@ if ( ! empty( $programId ) )
 	Dear <?= $name ?>,
 </p>
 
-<p>Thanks for your interest in our tours!</p>
+<p>Thanks for your interest in our experiential learning programs.</p>
 
 <?php if ( ! empty( $programId ) ) : ?>
 <p>
-	You can find the detailed itinerary <a href="<?= $attachmentURL ?>" target="_blank">here</a>.
+	You can find the details <a href="<?= $attachmentURL ?>" target="_blank">here</a>.
 </p>
 <?php endif; ?>
 
 <p>Someone from our team will get in touch with you to provide any additional information that you may need.</p>
-<?php // <p>Someone from our team will contact you soon.</p> ?>
 
 <p>
 	Regards,
