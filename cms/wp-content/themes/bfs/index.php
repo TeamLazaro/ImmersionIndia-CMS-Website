@@ -42,4 +42,5 @@ if ( $theURLEndsWithCMS ) {
 // 	while ( have_posts() )
 // 		the_post();
 
-// get_footer();
+if ( is_user_logged_in() )
+	get_footer();
