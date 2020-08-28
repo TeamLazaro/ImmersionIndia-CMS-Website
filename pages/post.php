@@ -51,7 +51,7 @@ $postContent = str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', $theP
 					<div class="block share-url js_share_url_widget">
 						<span class="share-url-title label text-uppercase inline-middle text-orange js_share_url_title">Share</span>
 						<i class="icon material-icons inline-middle text-orange">link</i>
-						<a class="share-url-label p inline-middle js_share_url" href="http://localhost/corporate-education-experiences" target="_blank"><?= $pageUrl ?></a>
+						<a class="share-url-label p inline-middle js_share_url" href="<?= $pageUrl ?>" target="_blank"><?= $pageUrl ?></a>
 						<textarea class="visuallyhidden js_share_url_text"><?= $pageUrl ?></textarea>
 					</div>
 					<!-- END: Share -->
