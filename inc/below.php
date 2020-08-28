@@ -49,7 +49,10 @@
 
 	<!--  ☠  MARKUP ENDS HERE  ☠  -->
 
-	<?php lazaro_disclaimer(); ?>
+	<?php
+		if ( ! BFS_ENV_PRODUCTION )
+			echo lazaro_disclaimer();
+	?>
 
 
 
@@ -68,7 +71,9 @@
 	<script type="text/javascript" src="/plugins/cd-headline/js/main.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/carousel.js<?php echo $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/form.js<?php echo $ver ?>"></script>
-	<script type="text/javascript" src="/js/modules/disclaimer.js<?php echo $ver ?>"></script>
+	<?php if ( ! BFS_ENV_PRODUCTION ) : ?>
+		<script type="text/javascript" src="/js/modules/disclaimer.js<?php echo $ver ?>"></script>
+	<?php endif; ?>
 	<!-- Slick Carousel -->
 	<script type="text/javascript" src="/plugins/slick/slick.min.js<?php echo $ver ?>"></script>
 
