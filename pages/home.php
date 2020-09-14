@@ -144,7 +144,7 @@ foreach ( $memberObjects as $memberObject ) {
 <!-- END: Landing Section -->
 
 <!-- Intro Section -->
-<section class="intro-section fill-neutral-1 space-100-top-bottom" id="intro-section" data-section-title="Intro Section" data-section-slug="intro-section">
+<section class="intro-section fill-neutral-1 space-100-top" id="intro-section" data-section-title="Intro Section" data-section-slug="intro-section">
 	<div class="row space-50-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8">
@@ -201,7 +201,10 @@ foreach ( $memberObjects as $memberObject ) {
 			</div>
 		</div>
 	</div>
-	<div class="row space-50-top" id="intro-section-travel">
+</section>
+<!-- Split Intro Section -->
+<section class="intro-section fill-neutral-1 space-100-bottom" id="intro-section-travel" data-section-title="Intro Section Travel" data-section-slug="intro-section-travel">
+	<div class="row space-50-top">
 		<div class="container">
 			<div class="columns small-12 medium-10 medium-offset-1 large-8">
 				<div class="h2 text-pink space-min-bottom">Travel. Experience. Learn. Repeat.</div>
