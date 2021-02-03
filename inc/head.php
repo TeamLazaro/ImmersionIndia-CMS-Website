@@ -157,7 +157,9 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.typekit.net/grd7uoj.css">
 ARB
-, 'arbitrary_code -> before_head_closing' ); ?>
+, 'fonts_and_icons_embed' ); ?>
+
+	<?= getContent( '', 'arbitrary_code -> before_head_closing' ); ?>
 
 
 </head>
